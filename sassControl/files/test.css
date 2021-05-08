@@ -1,0 +1,90 @@
+.display-block {
+  display: block; }
+
+.display-inline-block {
+  display: inline-block; }
+
+.box-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox; }
+
+.display-flex {
+  display: flex; }
+
+.inline-box-inline-flexbox {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox; }
+
+.display-inline-flex {
+  display: inline-flex; }
+
+.background-attachment {
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  -ms-background-attachment: fixed;
+  background-attachment: fixed; }
+
+.background-repeat {
+  -webkit-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  -o-background-repeat: no-repeat;
+  -ms-background-repeat: no-repeat;
+  background-repeat: no-repeat; }
+
+.background-size {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover; }
+
+.display-block {
+  display: block; }
+
+.display-inline-block {
+  display: inline-block; }
+
+.box-flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox; }
+
+.display-flex {
+  display: flex; }
+
+.inline-box-inline-flexbox {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox; }
+
+.display-inline-flex {
+  display: inline-flex; }
+
+.background-attachment {
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -o-background-attachment: fixed;
+  -ms-background-attachment: fixed;
+  background-attachment: fixed; }
+
+.background-repeat {
+  -webkit-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  -o-background-repeat: no-repeat;
+  -ms-background-repeat: no-repeat;
+  background-repeat: no-repeat; }
+
+.background-size {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover; }
+
+@media (max-width: 1222px) {
+  body, a {
+    color: red; } }
+  @media (max-width: 1222px) and (max-width: 1222px) {
+    body, a {
+      color: red; } }
+
+/*# sourceMappingURL=test.css.map */
