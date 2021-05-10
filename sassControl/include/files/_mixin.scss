@@ -13,7 +13,7 @@
 $back:(attachment:fixed,repeat:no-repeat,size:cover);
 @mixin background{
     @each $b, $c in $back{
-        .background-#{$b}{
+        %background-#{$b}{
             $background: background-#{$b};
             @include prefix($background,$c);
         }
@@ -60,3 +60,77 @@ $back:(attachment:fixed,repeat:no-repeat,size:cover);
     z-index: $v;
 }
     // End s-index
+// width
+    // Satart width
+@mixin width($v) {
+    width: $v+px;
+}
+@mixin min-width($v) {
+    min-width: $v+px;
+}
+@mixin max-width($v) {
+    max-width: $v+px;
+}
+    // End width
+// height
+    // Satart height
+@mixin height($v) {
+    height: $v+px;
+}
+@mixin min-height($v) {
+    min-height: $v+px;
+}
+@mixin max-height($v) {
+    max-height: $v+px;
+}
+    // End width
+// top and right and bottom and left
+@mixin top($value) {
+    top:$value;
+}
+@mixin right($value) {
+    right:$value;
+}
+@mixin bottom($value) {
+    bottom:$value;
+}
+@mixin left($value) {
+    left:$value;
+}
+// 
+// media query
+    // Start Extra small
+@mixin md-575 {
+    @media (max-width:576px){
+        @content;
+    }
+}
+    // Start Extra small
+    // Start  small
+@mixin md-576 {
+    @media (min-width:576px) {
+        @content;
+    }
+}
+    // Start  small
+    // Start  Medium
+@mixin md-768 {
+    @media (min-width:768px) {
+        @content;
+    }
+}
+    // Start  Medium
+    // Start  Large
+@mixin md-992 {
+    @media (min-width:992px) {
+        @content;
+    }
+}
+    // Start  Large
+    // Start  XX-Large
+@mixin md-1400 {
+    @media (min-width:1400px) {
+        @content;
+    }
+}
+    // Start  XX-Large

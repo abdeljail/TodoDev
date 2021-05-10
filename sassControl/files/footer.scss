@@ -1,0 +1,91 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+footer{
+    @extend %background-color-white;
+    .container{
+        .content-footer{
+            @extend %padding-20;
+            @extend %display-flex;
+            @extend %justify-content-flex-end;
+            @extend %align-items-center;
+            height:30vh;
+            .lang{
+                @extend %relative;
+                div:first-of-type{
+                    @include width(120);
+                    @extend %pointer;
+                    @extend %padding-10;
+                    @extend %background-color-black;
+                    @extend %border-radius-4;
+                    @extend %border-width-2;
+                    @extend %border-style-solid;
+                    @extend %border-color-dark_white;
+                    @extend %color-dark_white;
+                    @extend %box-shadow-black;
+                    @extend %transition-timing-function-ease-in-out;
+                    @extend %transition-property-all;
+                    @extend %transition-duration-3;
+                    @extend %display-flex;
+                    @extend %justify-content-center;
+                    @extend %align-items-center;
+                    i{
+                        @extend %font-size-18;
+                    }
+                    span{
+                        @extend %margin-left-10;
+                        @extend %capitalize;
+                        @include width(70);
+                    }
+                }
+                div:last-of-type{
+                    @include top(calc(-40px + (-3 * 36px)));
+                    @extend %absolute;
+                    @extend %padding-20;
+                    @extend %border-radius-4;
+                    @extend %display-flex;
+                    @extend %background-color-dark_white;
+                    @extend %flex-direction-column;
+                    @extend %opacity-0;
+                    @extend %z-index--1;
+                    @extend %transition-timing-function-ease-in-out;
+                    @extend %transition-property-all;
+                    @extend %transition-duration-1;
+                    span{
+                        @extend %padding-6-20;
+                        @extend %display-block;
+                        @extend %pointer;
+                        @extend %margin-2-0;
+                        @extend %border-radius-4;
+                        @extend %transition-timing-function-ease-in-out;
+                        @extend %transition-property-all;
+                        @extend %transition-duration-3;
+                        @extend %color-black;
+                        @extend %capitalize;
+                        @extend %center;
+                        &:hover{
+                            @extend %background-color-black;
+                            @extend %color-dark_white;
+                        }
+                    }
+                    &::after{
+                        @include width(20);
+                        @include height(20);
+                        @include prefix(transform,rotate(45deg));
+                        @include left(calc(50% - 10px));
+                        @include bottom(-10px);
+                        @extend %content;
+                        @extend %absolute;
+                        @extend %background-color-dark_white;
+                        @extend %border-radius-2;
+                    }
+                }
+            }
+        }
+    }
+}
+.select-show{
+    @extend %opacity-important-1;
+    @extend %z-index-important-10;
+}
+@import "../include/mediaQuery/footer";

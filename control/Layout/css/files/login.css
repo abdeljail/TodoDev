@@ -1,0 +1,214 @@
+section.login .container .content-login .form .header-form {
+  color: #009688; }
+
+section.login .container .content-login .form .footer-form > div .btn button {
+  color: #F0F2F4; }
+
+section.login .container .content-login .form .body-form .content-body-form > div label {
+  color: #546274; }
+
+body {
+  background-color: #020313; }
+
+section.login .container .content-login .form .footer-form > div .btn button {
+  background-color: #009688; }
+
+section.login .container .content-login .form .body-form .content-body-form > div input {
+  background-color: #F9F9F9; }
+
+section.login .container .content-login .form {
+  background-color: #F0F2F4; }
+
+* {
+  padding: 0px; }
+
+section.login .container .content-login .form .footer-form {
+  padding: 10px; }
+
+section.login .container .content-login .form .body-form .content-body-form > div input, section.login .container .content-login .form .footer-form > div .btn button {
+  padding: 16px; }
+
+section.login .container .content-login, section.login .container .content-login .form > * {
+  padding: 20px; }
+
+* {
+  margin: 0px; }
+
+section.login .container .content-login .form > * input, section.login .container .content-login .form > * button, section.login .container .content-login .form > * label {
+  margin: 10px 0; }
+
+section.login .container .content-login .form .body-form .content-body-form div:last-child {
+  margin-top: 20px; }
+
+section.login .container .content-login .form .body-form .content-body-form div:first-child {
+  margin-bottom: 20px; }
+
+section.login .container .content-login .form .footer-form > div .btn button {
+  font-weight: 600; }
+
+section.login .container .content-login .form .body-form .content-body-form > div label {
+  font-size: 14px; }
+
+body {
+  font-size: 16px; }
+
+section.login .container .content-login .form .header-form, section.login .container .content-login .form .footer-form > div .btn button {
+  font-size: 20px; }
+
+section.login .container .content-login .form .header-form, section.login .container .content-login .form .body-form .content-body-form > div label {
+  text-transform: capitalize; }
+
+section.login .container .content-login .form > * input, section.login .container .content-login .form > * button, section.login .container .content-login .form > * label {
+  display: block; }
+
+section.login .container .content-login {
+  display: flex; }
+
+section.login .container .content-login .form .body-form .content-body-form > div input {
+  border-width: 1px; }
+
+section.login .container .content-login .form .footer-form > div .btn button {
+  border-width: 2px; }
+
+section.login .container .content-login .form {
+  border-width: 6px; }
+
+section.login .container .content-login .form .footer-form {
+  border-top-width: 6px; }
+
+section.login .container .content-login .form .header-form {
+  border-bottom-width: 6px; }
+
+section.login .container .content-login .form, section.login .container .content-login .form .body-form .content-body-form > div input, section.login .container .content-login .form .footer-form > div .btn button {
+  border-style: solid; }
+
+section.login .container .content-login .form .footer-form {
+  border-top-style: solid; }
+
+section.login .container .content-login .form .header-form {
+  border-bottom-style: solid; }
+
+section.login .container .content-login .form .body-form .content-body-form > div input:focus {
+  border-color: #020313; }
+
+section.login .container .content-login .form .footer-form > div .btn button {
+  border-color: #026057; }
+
+section.login .container .content-login .form {
+  border-color: #FFF; }
+
+section.login .container .content-login .form .footer-form {
+  border-top-color: #FFF; }
+
+section.login .container .content-login .form .header-form {
+  border-bottom-color: #FFF; }
+
+section.login .container .content-login .form .body-form .content-body-form > div input {
+  border-color: #ccc; }
+
+section.login .container .content-login .form, section.login .container .content-login .form .body-form .content-body-form > div input, section.login .container .content-login .form .footer-form > div .btn button {
+  border-radius: 4px; }
+
+section.login .container .content-login .form .footer-form > div .btn button:hover {
+  -webkit-box-shadow: 0px 0px 14px #026057;
+  -moz-box-shadow: 0px 0px 14px #026057; }
+
+section.login .container .content-login .form .footer-form > div .btn button:hover {
+  box-shadow: 0px 0px 14px #026057; }
+
+section.login .container .content-login .form .footer-form > div .btn button {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all; }
+
+section.login .container .content-login .form .footer-form > div .btn button {
+  transition-property: all; }
+
+section.login .container .content-login .form .footer-form > div .btn button {
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out; }
+
+section.login .container .content-login .form .footer-form > div .btn button {
+  transition-timing-function: ease-in-out; }
+
+section.login .container .content-login .form .footer-form > div .btn button {
+  transition-duration: 0.3s; }
+
+section.login .container .content-login .form .footer-form > div .btn button {
+  cursor: pointer; }
+
+section.login .container .content-login {
+  justify-content: center; }
+
+section.login .container .content-login {
+  align-items: center; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+button, input {
+  border: none;
+  outline: none; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+section.login .container .content-login {
+  height: 100vh; }
+  section.login .container .content-login .form {
+    width: 500px;
+    min-height: 100px; }
+    section.login .container .content-login .form .body-form .content-body-form {
+      margin: auto;
+      width: 400px; }
+      section.login .container .content-login .form .body-form .content-body-form > div input {
+        width: 400px; }
+    section.login .container .content-login .form .footer-form > div {
+      margin: auto;
+      width: 400px; }
+      section.login .container .content-login .form .footer-form > div .btn button {
+        width: 400px; }
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%; } }
+
+@media (min-width: 576px) {
+  .container {
+    width: 540px; } }
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px; } }
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px; } }
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px; } }
+
+@media (max-width: 576px) {
+  section.login .container .content-login .form .body-form {
+    padding: 20px 12px;
+    margin: auto;
+    width: 310px !important; }
+  section.login .container .content-login .form .content-body-form {
+    padding: 0;
+    width: 280px !important; }
+    section.login .container .content-login .form .content-body-form input {
+      width: 280px !important; }
+  section.login .container .content-login .form .footer-form > div, section.login .container .content-login .form .footer-form button {
+    width: 280px !important; } }
+
+/*# sourceMappingURL=login.css.map */

@@ -11,6 +11,7 @@ $colors:("black": $black,
         "danger": $danger, 
         "success": $success, 
         "info":$info,
+        "para":$para,
         );
 // color 
    // Start loop list color
@@ -31,6 +32,13 @@ $colors:("black": $black,
    // End loop list background-color// padding 
     // Start loop list padding
 $size_padding: 0,2,4,5,6,8,10,12,14,15,16,20;
+@each $i in $size_padding {
+    @each $j in $size_padding {
+    %padding-#{$i}-#{$j}{
+        padding: #{$i}px #{$j}px;
+    }
+}
+}
 @each $sp in $size_padding {
     %padding-#{$sp}{
         padding: #{$sp}px;
@@ -61,7 +69,8 @@ $size_padding: 0,2,4,5,6,8,10,12,14,15,16,20;
     // End loop list padding
 
 // margin
-   // Start loop list margin$size_padding: 0,2,4,5,6,8,10,12,14,15,16,20;
+   // Start loop list margin 
+$size_padding: 0,2,4,5,6,8,10,12,14,15,16,20;
 @each $sp in $size_padding {
     %margin-#{$sp}{
         margin: #{$sp}px;
@@ -105,7 +114,7 @@ $font-weight:100,200,300,400,500,600,700,800,900,blod;
 $font-size:8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48;
 @each $fs in $font-size {
     %font-size-#{$fs}{
-        font-size: $fs;
+        font-size: #{$fs}px;
     }
 }
    // End loop list font-size
@@ -131,7 +140,7 @@ $text-transform:capitalize,uppercase,lowercase;
 // display
    // Start loop list display
 @mixin display_prefix($b,$f) {
-    .#{$b}-#{$f}{
+    %#{$b}-#{$f}{
         display: -webkit-#{$b};
         display: -ms-#{$f};
     }   
@@ -144,7 +153,7 @@ $display: block,inline-block,flex,inline-flex;
     @if $d == inline-flex {
         @include display_prefix(inline-box,inline-flexbox);
     }
-    .display-#{$d}{
+    %display-#{$d}{
         display:$d;
     }
 }
@@ -153,19 +162,35 @@ $display: block,inline-block,flex,inline-flex;
     // Start loop list border
 $border-width:1,2,3,4,5,6,7,8,9,10;
 $border-style:solid,dashed;
+$position : top,right,bottom,left;
 @each $bw in $border-width {
     %border-width-#{$bw}{
         border-width: #{$bw}px;
+    }
+    @each $p in $position {
+        %border-width-#{$p}-#{$bw}{
+            border-#{$p}-width: #{$bw}px;
+        }
     }
 }
 @each $bs in $border-style {
     %border-style-#{$bs}{
         border-style: $bs;
     }
+    @each $p in $position {
+        %border-style-#{$p}-#{$bs}{
+            border-#{$p}-style: $bs;
+        }
+    }
 }
 @each $name,$bc in $colors {
     %border-color-#{$name}{
         border-color: $bc;
+    }
+    @each $p in $position {
+        %border-color-#{$p}-#{$name}{
+            border-#{$p}-color: $bc;
+        }
     }
 }
     // End loop list border
@@ -197,7 +222,7 @@ $size_border-radius: 0,2,4,5,6,8,10,12,14,15,16,20;
 // transition 
     // Start loop list transition
 @mixin transition-property_prefix($b,$c){
-    %#{$b}-#{$c}:hover{
+    %#{$b}-#{$c}{
         -webkit-#{$b}    : $c;
         -moz-#{$b}       : $c;
         -o-#{$b}         : $c;
@@ -205,23 +230,38 @@ $size_border-radius: 0,2,4,5,6,8,10,12,14,15,16,20;
     }
 }
 @mixin transition-timing-function_prefix($b,$c){
-    %#{$b}-#{$c}:hover{
+    %#{$b}-#{$c}{
         -webkit-#{$b}    : $c;
         -moz-#{$b}       : $c;
     }
 }
-$transition-property:box-shadow;
+$transition-property:box-shadow,all;
 $transition-timing-function:ease,ease-in,ease-out,ease-in-out,linear;
+$transition-duration: 1,2,3,4,5,6,7,8,9,10;
+$transition-delay:1,2,3,4,5,6,7,8,9,10;
 @each $tp in $transition-property {
     @include transition-property_prefix(transition-property, $tp);
-    %transition-property-#{$tp}:hover{
+    %transition-property-#{$tp}{
         transition-property:$tp;
     }
 }
 @each $ttf in $transition-timing-function{
     @include transition-timing-function_prefix(transition-timing-function, $ttf);
-    %transition-timing-function-#{$ttf}:hover{
-        transition-property:$ttf;
+    %transition-timing-function-#{$ttf}{
+        transition-timing-function:$ttf;
+    }
+}
+@each $td in $transition-duration {
+    @include transition-property_prefix(transition-property, $td);
+    %transition-duration-#{$td}{
+        transition-duration: ($td / 10) + s;
+    }
+}
+@each $td in $transition-duration {
+    @include transition-property_prefix(transition-property, $td);
+    %transition-delay-#{$td}{
+        @include transition-property_prefix(transition-delay,$td);
+        transition-delay: ($td / 10) + s;
     }
 }
     // End loop list transition
@@ -251,10 +291,15 @@ $position:relative,absolute,fixed;
 // End top right botttom left
 // z-index
     // Start loop list z-index
-$z-index:0,1,2,3,4,5,6,7,8,9,10;
+$z-index:-1,0,1,2,3,4,5,6,7,8,9,10;
 @each $zi in $z-index {
     %z-index-#{$zi}{
-        position: $zi;
+        z-index: $zi;
+    }
+}
+@each $zi in $z-index {
+    %z-index-important-#{$zi}{
+        z-index: $zi !important;
     }
 }
     // End loop list z-index
@@ -291,8 +336,8 @@ $align-content:flex-start,center,stretch, space-between,flex-end,space-around;
 // flexbox children
     // Start loop list flexbox
 $align-self:auto , flex-start , flex-end , center , baseline , stretch;
-@each $as in $align-content {
-    %justify-content-#{$as}{
+@each $as in $align-self {
+    %align-self-#{$as}{
         align-self: $as;
     }
 }
@@ -315,3 +360,24 @@ $flex-wrap:row,row-reverse,column,column-reverse;
     }
 }
     // End loop list flex-wrap
+// after and before
+
+// Start loop list content
+%content{
+    content: "";
+}
+// End loop list content
+// opacity
+    // Start loop list opacity
+$opacity:0,1;
+@each $o in $opacity {
+    %opacity-#{$o}{
+        opacity: $o ;
+    }
+}
+@each $o in $opacity {
+    %opacity-important-#{$o}{
+        opacity: $o !important;
+    }
+}
+    // End loop list opacity
