@@ -59,6 +59,7 @@ require_once getPathFile('include/template/footer.php');
 script("","global");
 script("","login");
 script("","footer");
+require_once getPathFile('include/template/end.php');
 ?>
 
 

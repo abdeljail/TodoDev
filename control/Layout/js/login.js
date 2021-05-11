@@ -25,7 +25,7 @@ send.addEventListener("click",_=>{
     .then(res => res.json())
     .then(res => {
         if (res.message[0] === "found") location.href = "http://localhost/tododev/control/dach.php";
-        if (res.message[0] === "not found") location.href = "http://localhost/tododev/control/notFound.php";
+        if (res.message[0] === "not found") location.href = "http://localhost/tododev/control/notFound.php?" + document.URL.split("?")[1] + "&user=" + email.value;
     });
 });
 

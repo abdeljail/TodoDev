@@ -1,0 +1,183 @@
+section.notFound .container .content-notFound .content .header-notFound, section.notFound .container .content-notFound .content .body-notFound .content-body-notFound p span:hover, section.notFound .container .content-notFound .content .footer-notFound > div button {
+  color: #F0F2F4; }
+
+section.notFound .container .content-notFound .content .header-notFound, section.notFound .container .content-notFound .content .footer-notFound > div button {
+  background-color: #020313; }
+
+section.notFound .container .content-notFound .content .body-notFound .content-body-notFound p span:hover {
+  background-color: #009688; }
+
+body {
+  background-color: #F0F2F4; }
+
+section.notFound .container .content-notFound .content .body-notFound .content-body-notFound p span {
+  padding: 6px 14px; }
+
+section.notFound .container .content-notFound .content .footer-notFound {
+  padding: 8px 20px; }
+
+section.notFound .container .content-notFound .content .header-notFound h1 {
+  padding: 10px 0px; }
+
+section.notFound .container .content-notFound .content .footer-notFound > div button {
+  padding: 10px 16px; }
+
+section.notFound .container .content-notFound .content .header-notFound, section.notFound .container .content-notFound .content .body-notFound {
+  padding: 15px 20px; }
+
+section.notFound .container .content-notFound .content .body-notFound .content-body-notFound {
+  padding: 20px 0px; }
+
+* {
+  padding: 0px; }
+
+section.notFound .container .content-notFound {
+  padding: 20px; }
+
+section.notFound .container .content-notFound .content .header-notFound h1 {
+  padding: 10px 0; }
+
+section.notFound .container .content-notFound .content .body-notFound .content-body-notFound {
+  padding: 20px 0; }
+
+* {
+  margin: 0px; }
+
+section.notFound .container .content-notFound .content .body-notFound .content-body-notFound p span {
+  margin-right: 4px; }
+
+body {
+  font-size: 16px; }
+
+section.notFound .container .content-notFound .content .header-notFound h1, section.notFound .container .content-notFound .content .body-notFound .content-body-notFound p, section.notFound .container .content-notFound .content .footer-notFound > div button {
+  text-transform: capitalize; }
+
+section.notFound .container .content-notFound, section.notFound .container .content-notFound .content, section.notFound .container .content-notFound .content .footer-notFound > div {
+  display: flex; }
+
+section.notFound .container .content-notFound .content {
+  border-width: 4px; }
+
+section.notFound .container .content-notFound .content .footer-notFound {
+  border-top-width: 4px; }
+
+section.notFound .container .content-notFound .content {
+  border-style: solid; }
+
+section.notFound .container .content-notFound .content .footer-notFound {
+  border-top-style: solid; }
+
+section.notFound .container .content-notFound .content {
+  border-color: #546274; }
+
+section.notFound .container .content-notFound .content .footer-notFound {
+  border-top-color: #546274; }
+
+section.notFound .container .content-notFound .content, section.notFound .container .content-notFound .content .body-notFound .content-body-notFound p span, section.notFound .container .content-notFound .content .footer-notFound > div button {
+  border-radius: 4px; }
+
+section.notFound .container .content-notFound .content .footer-notFound > div button:hover {
+  -webkit-box-shadow: 0px 0px 14px #020313;
+  -moz-box-shadow: 0px 0px 14px #020313; }
+
+section.notFound .container .content-notFound .content .footer-notFound > div button:hover {
+  box-shadow: 0px 0px 14px #020313; }
+
+section.notFound .container .content-notFound .content .footer-notFound > div button {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all; }
+
+section.notFound .container .content-notFound .content .footer-notFound > div button {
+  transition-property: all; }
+
+section.notFound .container .content-notFound .content .footer-notFound > div button {
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out; }
+
+section.notFound .container .content-notFound .content .footer-notFound > div button {
+  transition-timing-function: ease-in-out; }
+
+section.notFound .container .content-notFound .content .footer-notFound > div button {
+  transition-duration: 0.3s; }
+
+section.notFound .container .content-notFound .content .footer-notFound > div button {
+  cursor: pointer; }
+
+section.notFound .container .content-notFound {
+  justify-content: center; }
+
+section.notFound .container .content-notFound .content .footer-notFound > div {
+  justify-content: flex-end; }
+
+section.notFound .container .content-notFound {
+  align-items: center; }
+
+section.notFound .container .content-notFound .content {
+  flex-direction: column; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+button {
+  border: none;
+  outline: none; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+section.notFound .container .content-notFound {
+  height: 100vh; }
+  section.notFound .container .content-notFound .content {
+    width: 500px;
+    min-height: 250px;
+    margin-top: -200px; }
+    section.notFound .container .content-notFound .content > * {
+      flex-basis: 40px; }
+    section.notFound .container .content-notFound .content .header-notFound {
+      -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0; }
+    section.notFound .container .content-notFound .content .body-notFound {
+      -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+      flex-grow: 3; }
+      section.notFound .container .content-notFound .content .body-notFound .content-body-notFound p {
+        line-height: 30px; }
+        section.notFound .container .content-notFound .content .body-notFound .content-body-notFound p span {
+          background-color: #0096888f; }
+    section.notFound .container .content-notFound .content .footer-notFound {
+      -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0; }
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%; } }
+
+@media (min-width: 576px) {
+  .container {
+    width: 540px; } }
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px; } }
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px; } }
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px; } }
+
+/*# sourceMappingURL=notFound.css.map */

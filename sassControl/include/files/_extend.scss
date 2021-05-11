@@ -381,3 +381,18 @@ $opacity:0,1;
     }
 }
     // End loop list opacity
+// overflow
+    // Start loop list overflow
+$overflow:visible,hidden,clip,scroll,auto;
+@each $o in $overflow {
+    %overflow-#{$o}{
+        overflow: $o ;
+        overflow: clip;
+    }
+}
+@each $o in $opacity {
+    %opacity-important-#{$o}{
+        opacity: $o !important;
+    }
+}
+    // End loop list overflow
