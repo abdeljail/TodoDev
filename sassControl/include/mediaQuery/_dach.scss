@@ -1,0 +1,46 @@
+
+.state{
+    @include md-575{
+        width: 300px;
+        textarea{
+            width: 260px !important;
+        }
+    }
+}
+.dach{
+    @include md-575{
+        .content-dach{
+            flex-direction: column;
+
+        }
+    }
+}
+.dach{
+    @include md-576-767{
+        .content-dach{
+            flex-direction: column;
+            .content{
+                .box-content{
+                    >div{
+                        flex-basis: 250px;
+                    }
+                }
+            }
+        }
+    }
+}
+// .container{
+//     @include md-768-991{
+//         width:720px;
+//     }
+// }
+// .container{
+//     @include md-992-1199{
+//         width:960px;
+//     }
+// }
+// .container{
+//     @include md-1400{
+//         width:1320px;
+//     }
+// }

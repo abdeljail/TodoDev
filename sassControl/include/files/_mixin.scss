@@ -99,6 +99,14 @@ $back:(attachment:fixed,repeat:no-repeat,size:cover);
 }
 // 
 // media query
+
+@mixin md-350 {
+    @media (max-width:350px){
+        @content;
+    }
+}
+
+
     // Start Extra small
 @mixin md-575 {
     @media (max-width:576px){
@@ -108,7 +116,12 @@ $back:(attachment:fixed,repeat:no-repeat,size:cover);
     // Start Extra small
     // Start  small
 @mixin md-576 {
-    @media (min-width:576px) {
+    @media (min-width:576px)  {
+        @content;
+    }
+}
+@mixin md-576-767 {
+    @media (min-width:576px) and (max-width:767px) {
         @content;
     }
 }
@@ -119,10 +132,20 @@ $back:(attachment:fixed,repeat:no-repeat,size:cover);
         @content;
     }
 }
+@mixin md-768-991 {
+    @media (min-width:768px) and (max-width:991px) {
+        @content;
+    }
+}
     // Start  Medium
     // Start  Large
 @mixin md-992 {
     @media (min-width:992px) {
+        @content;
+    }
+}
+@mixin md-992-1199 {
+    @media (min-width:992px) and (max-width:1199px) {
         @content;
     }
 }

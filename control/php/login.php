@@ -18,9 +18,9 @@ function login($arr){
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
     if(password_verify($arr[2] . "todolist" , $row["password"])){
         session_start();
-        $_SESSION["name"]   = $row["admin_name"];
-        $_SESSION["email"]  = $row["admin_email"] ;
-        $_SESSION["id"]     = $row["id_dmin"];
+        $_SESSION["name"]   = $row["name"];
+        $_SESSION["email"]  = $row["email"] ;
+        $_SESSION["id"]     = $row["id"];
         return "found";
     }
     return "not found";

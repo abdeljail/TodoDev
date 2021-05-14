@@ -1,0 +1,79 @@
+aside{
+    @include md-575{
+            width: 100%;
+        .content-aside{
+            flex-direction: column;
+            height: inherit;
+            min-height: 0;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                overflow: auto;
+                li{
+                    a{
+                        img{
+                            margin: 0;
+                        }
+                    }
+                    a,button{
+                        padding: 10px 5px;
+                        span{
+                            display: none;
+                        }
+                    }
+                }
+                li:last-child{
+                    position: inherit;
+                    padding: 0;
+                    button{
+                            width: 0;
+                            padding: 8px 16px;
+                            line-height: 16px;
+                        i{
+                            margin-left: -8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+aside{
+    @include md-576-767{
+        .content-aside{
+            flex-direction: column;
+            height: inherit;
+            min-height: 0;
+            ul{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                li{
+                    a{
+                        img{
+                            margin: 0;
+                        }
+                    }
+                    a,button{
+                        span{
+                            display: none;
+                        }
+                    }
+                }
+                li:last-child{
+                    position: inherit;
+                    padding: 0;
+                    button{
+                            width: 0;
+                            padding: 8px 16px;
+                            line-height: 16px;
+                        i{
+                            margin-left: -8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+aside{
+    @include min-width(2);
+    @extend %relative;
+    .content-aside{   
+        @include min-width(2); 
+        @extend %padding-10-8;
+        @extend %background-color-dark_green;
+        @extend %top;
+        @extend %border-style-top-solid;
+        @extend %border-width-top-2;
+        @extend %border-color-top-green;
+        position: -webkit-sticky;
+        position: sticky;
+        min-height: 100vh;
+        ul{
+            li{
+                a{
+                    @extend %padding-8-16;
+                    @extend %font-size-14;
+                    @extend %border-radius-6;
+                    @extend %capitalize;
+                    @extend %color-dark_white;
+                    @extend %transition-timing-function-ease-in-out;
+                    @extend %transition-property-all;
+                    @extend %transition-duration-2;
+                    @extend %display-flex;
+                    @extend %justify-content-start;
+                    @extend %align-items-center;
+                    img{
+                        @extend %margin-right-10;
+                    }
+                    &:hover{
+                        @extend %background-color-green;
+                    }
+                }
+            }
+            li:last-child{
+                @extend %padding-12-0;
+                @extend %absolute;
+                @extend %bottom;
+                @extend %display-block;
+                button{
+                    @include width(186);
+                    @extend %padding-10-16;
+                    @extend %border-radius-4;
+                    @extend %pointer;
+                    @extend %color-dark_white;
+                    @extend %background-color-yellow; 
+                    @extend %border-width-2;
+                    @extend %border-style-solid;
+                    @extend %border-color-dark_white;
+                    @extend %font-size-18;
+                    @extend %box-shadow-yellow;
+                    @extend %transition-timing-function-ease-in-out;
+                    @extend %transition-property-all;
+                    @extend %transition-duration-3;
+                    margin: 0 auto;
+                    i{
+                        @extend %font-weight-500;
+                    }
+                }
+            }
+            .al{
+                @extend %background-color-green;
+            }
+        }
+    }
+}
+@import "../include/mediaQuery/aside";

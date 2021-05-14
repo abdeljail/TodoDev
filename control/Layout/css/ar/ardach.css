@@ -1,0 +1,35 @@
+.dach .content-dach .content .box-content > div .top-4, .dach .content-dach .content .box-content > div .top-4 button {
+  background-color: #020313; }
+
+.dach .content-dach .content .box-content > div .top-2, .dach .content-dach .content .box-content > div .top-2 button {
+  background-color: #009688; }
+
+.dach .content-dach .content .box-content > div .top-1, .dach .content-dach .content .box-content > div .top-1 button {
+  background-color: #026057; }
+
+.dach .content-dach .content .box-content > div .top-3, .dach .content-dach .content .box-content > div .top-3 button {
+  background-color: #F69A0F; }
+
+.lang div:first-child span {
+  margin-right: 10px; }
+
+.dach .content-dach .content .box-content > div .header .box {
+  border-top-left-radius: 0px; }
+
+.dach .content-dach .content .box-content > div .header .box {
+  border-top-right-radius: 4px; }
+
+body {
+  direction: rtl; }
+
+.dach .content-dach .content .box-content > div .header span {
+  left: 15px;
+  right: inherit; }
+.dach .content-dach .content .box-content > div .header .box {
+  left: 20px;
+  right: inherit; }
+  .dach .content-dach .content .box-content > div .header .box::after {
+    left: 2px;
+    right: inherit; }
+
+/*# sourceMappingURL=ardach.css.map */

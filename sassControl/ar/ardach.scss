@@ -1,0 +1,62 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+body{
+    direction: rtl;
+}
+.lang div:first-child span{
+    @extend %margin-right-10;
+}
+.dach{
+    .content-dach{
+        .content{
+            .box-content{
+                >div{
+                    .header{
+                        span{
+                            @include left(15px);
+                            right: inherit;
+                        }
+                        .box{
+                            @include left(20px);
+                            @extend %border-radius-top-left-0;
+                            @extend %border-radius-top-right-4;
+                            right: inherit;
+                            &::after{
+                                @include left(2px);
+                                right: inherit;
+                            }
+                        }
+                    }
+                    .top-1{
+                        @extend %background-color-dark_green;
+                        button{
+                            @extend %background-color-dark_green;
+                        }
+                    }
+                    .top-2{
+                        @extend %background-color-green;
+                        button{
+                            @extend %background-color-green;
+                        }
+                    }
+                    .top-3{
+                        @extend %background-color-yellow;
+                        button{
+                            @extend %background-color-yellow;
+                        }
+                    }
+                    .top-4{
+                        @extend %background-color-black;
+                        button{
+                            @extend %background-color-black;
+                        }
+                    }
+                    .body{
+                        
+                    }
+                }
+            }
+        }
+    }
+}

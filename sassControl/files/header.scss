@@ -1,0 +1,184 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+li{
+    list-style: none;
+}
+header{
+    @extend %background-color-dark_green;
+    nav{
+        .container{
+            .content-nav{
+                @include height(75);
+                @extend %display-flex;
+                @extend %justify-content-space-between;
+                @extend %align-items-center;
+                .logo{
+                    @include min-height(65);
+                    a{
+                        @extend %display-block;
+                        .box-img{
+                            @extend %relative;
+                            img{
+                                @extend %absolute;
+                                @extend %transition-timing-function-ease-in-out;
+                                @extend %transition-property-all;
+                                @extend %transition-duration-3;
+                            }
+                            img:nth-child(2){
+                                @include left(11px);
+                                @include top(6px);
+                            }
+                            img:nth-child(3){
+                                @include left(19px);
+                                @include top(29px);
+                            }
+                            &:hover{
+                                img:nth-child(2){
+                                    @include top(4px);
+                                }
+                                img:nth-child(3){
+                                    @include top(31px);
+                                }
+                            }
+                        }
+                    }
+                }
+                .portfoloi{
+                    @extend %relative;
+                    @include width(60);
+                    @include height(60);
+                        @extend %display-flex;
+                        @extend %justify-content-flex-end;
+                        @extend %align-items-center;
+                    .img-p{
+                        @extend %relative;
+                        @include width(45);
+                        @include height(45);
+                        @extend %overflow-hidden;
+                        @extend %border-style-solid;
+                        @extend %border-width-2;
+                        @extend %border-color-green;
+                        @extend %pointer;
+                        @extend %relative;
+                        border-radius:50%;
+                        img{
+                            @extend %transition-timing-function-ease-in-out;
+                            @extend %transition-property-all;
+                            @extend %transition-duration-3;
+                        }
+                        &:after{
+                            @extend %absolute;
+                            @extend %width-100;
+                            @extend %height-100;
+                            @extend %content;
+                            @extend %transition-timing-function-ease-in-out;
+                            @extend %transition-property-all;
+                            @extend %transition-duration-1;
+                            @extend %top;
+                            @extend %left;
+                            @extend %opacity-0;
+                            @extend %z-index--1;
+                            background-color: #02605738;
+                        }
+                        &:hover{
+                            img{
+                                transform: scale(1.1) rotate(1deg);
+                                -moz-transform: scale(1.1) rotate(1deg);
+                                -o-transform: scale(1.1) rotate(1deg);
+                                -webkit-transform: scale(1.1) rotate(1deg);
+                                -ms-transform: scale(1.1) rotate(1deg);
+                            }
+                            &::after{
+                                @extend %opacity-1;
+                                @extend %z-index-1;
+                            }
+                        }
+                    }
+                    .rotate{
+                            @include width(20);
+                            @include height(20);
+                            @include top(35px);
+                            @include right(12px);
+                            @extend %opacity-0;
+                            @extend %z-index--1;
+                            @extend %absolute;
+                            @extend %content;
+                            @extend %background-color-dark_white;
+                            @extend %border-radius-2;
+                            @extend %border-style-solid;
+                            @extend %border-width-2;
+                            @extend %border-color-green;
+                            transform: rotate(45deg);
+                            -o-transform: rotate(45deg);
+                            -webkit-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            -moz-transform: rotate(45deg);
+                    }
+                    .show-ul-h{
+                        @extend %z-index-6;
+                        @extend %opacity-1;
+                    }
+                    ul{
+                        @include top(45px);
+                        @include left(-192px);
+                        @include min-height(100);
+                        @extend %opacity-0;
+                        @extend %z-index--1;
+                        @extend %absolute;
+                        @extend %border-radius-bottom-right-4;
+                        @extend %border-radius-bottom-left-4;
+                        @extend %border-radius-top-left-4;
+                        @extend %border-style-solid;
+                        @extend %border-width-2;
+                        @extend %border-color-green;
+                        @extend %overflow-hidden;
+                        @extend %background-color-dark_white;
+                        @extend %padding-bottom-10;
+                        li{
+                            a,button{
+                                @extend %capitalize;
+                            }
+                        }
+                        li{
+                            a{
+                                @include width(240);
+                                @extend %padding-14-20;
+                            }
+                        }
+                        li:first-child{
+                           a{
+                                @extend %color-dark_green;
+                           }
+                        }
+                        li:nth-child(2){
+                            a{
+                                @extend %color-dark_white;
+                                @extend %background-color-dark_green;
+                            }
+                        }
+                        li:last-child{
+                            button{
+                                @extend %color-dark_white;
+                                @extend %padding-10-20;
+                                @extend %border-radius-8;
+                                @extend %display-block;
+                                @extend %background-color-yellow;
+                                @extend %border-style-solid;
+                                @extend %border-width-2;
+                                @extend %border-color-white;
+                                @extend %pointer;
+                                @extend %box-shadow-yellow;
+                                @extend %transition-timing-function-ease-in-out;
+                                @extend %transition-property-all;
+                                @extend %transition-duration-3;
+                                @extend %font-size-17;
+                                margin: 12px auto 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

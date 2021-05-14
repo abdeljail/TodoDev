@@ -1,0 +1,19 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+footer{
+        .content-footer{
+            .bottom-footer{
+                .content-bottom{
+                    .copy{
+                        div:last-child{
+                            .box-so{
+                                @include right(-180px);
+                                left: inherit;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}

@@ -1,4 +1,13 @@
 <?php
+session_start();
+if(isset($_SESSION["name"]) && isset($_SESSION["email"]) && isset($_SESSION["id"])){
+    header("Location:http://localhost/tododev/control/dach.php");
+    exit;
+}
+if(!empty($_SESSION["name"]) && !empty($_SESSION["email"]) && !empty($_SESSION["id"])){
+    header("Location:http://localhost/tododev/control/dach.php");
+    exit;
+}
 # include file init
 require_once "php/include/init.php";
 $l = "en.php";
@@ -54,9 +63,8 @@ require_once getPathFile('include/template/body.php');?>
         </div>
     </div>
 </section>
-<?php 
+<?php
 require_once getPathFile('include/template/footer.php');
-script("","global");
 script("","login");
 script("","footer");
 require_once getPathFile('include/template/end.php');

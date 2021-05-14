@@ -1,0 +1,18 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+aside{
+    @include min-width(200);
+    .content-aside{
+        ul{
+            li{
+                a{
+                    img{
+                        margin-right: inherit;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }  
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAS4B,kFAAO;ECkF/B,KAAK,EAAC,MAAM;EDhFgB,IAAI,EAAE,OAAO",
+"sources": ["../../../../sassControl/ar/arfooter1.scss","../../../../sassControl/include/files/_mixin.scss"],
+"names": [],
+"file": "arfooter1.css"
+}

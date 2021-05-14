@@ -1,2 +1,5 @@
 <?php
-echo "yes";
+session_start();
+session_unset();
+session_destroy();
+header("Location:http://localhost/tododev/control/");

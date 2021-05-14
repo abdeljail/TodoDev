@@ -1,0 +1,259 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+button,input,textarea{
+    border: none;
+    outline: none;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+*{
+    @extend %margin-0;
+    @extend %padding-0;
+    @extend %box-sizing;
+}
+body{
+    @extend %background-color-dark_white;
+    @extend %font-size-16;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    @extend %display-block;
+    text-decoration: none;
+}
+.state{
+    @include left(50%);
+    @include top(-400px);
+    @extend %absolute;
+    @extend %z-index-10;
+    @extend %transition-duration-10;
+    transform: translateX(-50%);
+    .content{
+        @extend %border-radius-4;
+        @extend %background-color-dark_white;
+        @extend %border-style-solid;
+        @extend %border-width-2;
+        @extend %border-color-green;
+        box-shadow: 0 0 14px #009688;
+        >div{
+            @extend %padding-10-16;
+        }
+        .h3-clo{
+            @extend %color-para;
+            @extend %capitalize;
+            @extend %display-flex;
+            @extend %justify-content-space-between;
+            @extend %align-items-center;
+            span{
+                @extend %padding-5-10;
+                @extend %background-color-danger;
+                @extend %pointer;
+                @extend %border-radius-2;
+                @extend %border-style-solid;
+                @extend %border-width-1;
+                @extend %border-color-danger_0;
+                @extend %transition-timing-function-ease-in-out;
+                @extend %transition-property-all;
+                @extend %transition-duration-1;
+                @extend %color-dark_white;
+                &:hover{
+                    @extend %background-color-danger_0;
+                }
+            }
+        }
+        .input{
+            textarea{
+                @include width(380);
+                @include height(90);
+                @extend %padding-10-16;
+                @extend %background-color-white_F9;
+                @extend %border-radius-4;
+                @extend %border-style-solid;
+                @extend %border-width-1;
+                @extend %border-color-gray-500;
+                -moz-resize: none;
+                resize: none;
+                &:focus{
+                    @extend %border-color-para;
+                }
+            }
+        }
+        .btn{
+            @extend %border-style-top-solid;
+            @extend %border-width-top-2;
+            @extend %border-color-top-green;
+            @extend %display-flex;
+            @extend %justify-content-flex-end;
+            @extend %align-items-center;
+            button{
+                @extend %background-color-blue_sky;
+                @extend %padding-6-20;
+                @extend %capitalize;
+                @extend %color-dark_white;
+                @extend %box-shadow-blue_sky;
+                @extend %transition-timing-function-ease-in-out;
+                @extend %transition-property-all;
+                @extend %transition-duration-3;
+                @extend %transition-delay-10;
+                @extend %pointer;
+                @extend %border-radius-4;
+            }
+        }
+    }
+}
+.show-state-d{
+    @include top(20px);
+    @extend %transition-timing-function-ease-in-out;
+    @extend %transition-property-all;
+}
+.dach{
+    .content-dach{
+        @extend %display-flex;
+        @extend %flex-wrap-wrap;
+        min-height: 100vh;
+        .content{
+            @include flex-grow(1);
+            @include flex-basis(200px);
+            @extend %padding-20-20;
+            .box-content{
+                @extend %display-flex;
+                @extend %justify-content-space-evenly;
+                @extend %flex-wrap-wrap;
+                >div{
+                    @include flex-basis(400px);
+                    @extend %border-style-solid;
+                    @extend %border-width-1;
+                    @extend %border-color-gray-500;
+                    @extend %border-radius-4;
+                    @extend %margin-20-0;
+                    @extend %overflow-hidden;
+                    .header{
+                        @extend %padding-10-10;
+                        @extend %relative;
+                        h3{
+                            @extend %color-dark_white;
+                            @extend %capitalize;
+                            @extend %font-weight-500;
+                        }
+                        span{
+                            @include right(15px);
+                            @include top(10px);
+                            @include width(25);
+                            @include height(25);
+                            @extend %display-flex;
+                            @extend %justify-content-center;
+                            @extend %align-items-center;
+                            @extend %absolute;
+                            @extend %color-yellow;
+                            @extend %pointer;
+                            @extend %background-color-para;
+                            border-radius:50%;
+                            i{
+                            @extend %font-weight-500;
+                            }
+                        }
+                        .show-box-s{
+                            @extend %opacity-1;
+                            @extend %z-index-1;
+                        }
+                        .box{
+                            @extend %absolute;
+                            @include right(20px);
+                            @include top(36px);
+                            @extend %opacity-0;
+                            @extend %z-index--1;
+                            @extend %padding-10-10;
+                            @extend %border-radius-bottom-right-4;
+                            @extend %border-radius-bottom-left-4;
+                            @extend %border-radius-top-left-4;
+                            @extend %background-color-dark_white;
+                            @extend %transition-timing-function-ease-in-out;
+                            @extend %transition-property-all;
+                            @extend %transition-duration-3;
+                            button{
+                                @include min-width(80);
+                                @include height(30);
+                                @extend %padding-10-16;
+                                @extend %border-radius-4;
+                                @extend %background-color-dark_green;
+                                @extend %color-dark_white;
+                                @extend %pointer;
+                                @extend %transition-timing-function-ease-in-out;
+                                @extend %transition-property-all;
+                                @extend %transition-duration-3;
+                                @extend %box-shadow-green;
+                                @extend %capitalize;
+                            }
+                            &::after{
+                                @include width(10);
+                                @include height(10);
+                                @include right(2px);
+                                @include top(-5px);
+                                @extend %background-color-dark_white;
+                                @extend %absolute;
+                                @extend %content;
+                                transform: rotate(45deg);
+                                -moz-transform: rotate(45deg);
+                                -o-transform: rotate(45deg);
+                                -webkit-transform: rotate(45deg);
+                                -ms-transform: rotate(45deg);
+                            }
+                        }
+                    }
+                    .top-1{
+                        @extend %background-color-dark_green;
+                        button{
+                            @extend %background-color-dark_green;
+                        }
+                    }
+                    .top-2{
+                        @extend %background-color-green;
+                        button{
+                            @extend %background-color-green;
+                        }
+                    }
+                    .top-3{
+                        @extend %background-color-yellow;
+                        button{
+                            @extend %background-color-yellow;
+                        }
+                    }
+                    .top-4{
+                        @extend %background-color-black;
+                        button{
+                            @extend %background-color-black;
+                        }
+                    }
+                    .body{
+                        div{   
+                            @extend %padding-4;
+                            a{
+                                @extend %padding-6-10;
+                                @extend %border-radius-4;
+                                @extend %transition-timing-function-ease-in-out;
+                                @extend %transition-property-all;
+                                @extend %transition-duration-1;
+                                &:hover{
+                                    @extend %background-color-green;
+                                }
+                            }
+                        }
+                        div:nth-child(even){
+                            @extend %background-color-white_F9;
+                        }
+                        div:nth-child(odd){
+                            @extend %background-color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@import "../include/mediaQuery/container";
+@import "../include/mediaQuery/dach";

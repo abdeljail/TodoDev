@@ -12,8 +12,8 @@ function links($css,$v){
 };
 
 /// create function get link js
-function script($js,$v){  
-    echo "<script src='". $js ."Layout/js/". $v .".js'></script>"; 
+function script($js,$v,$type=""){
+    echo "<script src='". $js ."Layout/js/". $v .".js' $type></script>"; 
 };
 
 /// create function get include file

@@ -12,6 +12,7 @@ $colors:("black": $black,
         "success": $success, 
         "info":$info,
         "para":$para,
+        "danger_0":$danger_0
         );
 // color 
    // Start loop list color
@@ -111,7 +112,7 @@ $font-weight:100,200,300,400,500,600,700,800,900,blod;
   // End loop list font-weoght
 // font-zise
    // Start loop list font-size
-$font-size:8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48;
+$font-size:8,10,12,14,15,16,17,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48;
 @each $fs in $font-size {
     %font-size-#{$fs}{
         font-size: #{$fs}px;
@@ -201,6 +202,18 @@ $size_border-radius: 0,2,4,5,6,8,10,12,14,15,16,20;
     %border-radius-#{$sb}{
         border-radius: #{$sb}px;
     }
+    %border-radius-top-right-#{$sb}{
+        border-top-right-radius: $sb+px;
+    }
+    %border-radius-bottom-right-#{$sb}{
+        border-bottom-right-radius: $sb+px;
+    }
+    %border-radius-top-left-#{$sb}{
+        border-top-left-radius: $sb+px;
+    }
+    %border-radius-bottom-left-#{$sb}{
+        border-bottom-left-radius: $sb+px;
+    }
 }
     // End loop list border-radius
 // box-shadow
@@ -235,7 +248,7 @@ $size_border-radius: 0,2,4,5,6,8,10,12,14,15,16,20;
         -moz-#{$b}       : $c;
     }
 }
-$transition-property:box-shadow,all;
+$transition-property:box-shadow,all,transform,overflow;
 $transition-timing-function:ease,ease-in,ease-out,ease-in-out,linear;
 $transition-duration: 1,2,3,4,5,6,7,8,9,10;
 $transition-delay:1,2,3,4,5,6,7,8,9,10;
@@ -353,10 +366,10 @@ $flex-direction:row,row-reverse,column,column-reverse;
     // End loop list flex-direction
 // flex-wrap
     // Start loop list flex-wrap
-$flex-wrap:row,row-reverse,column,column-reverse;
+$flex-wrap:nowrap,wrap,wrap-reverse;
 @each $fw in $flex-wrap {
     %flex-wrap-#{$fw}{
-        flex-direction: $fw;
+        flex-wrap: $fw;
     }
 }
     // End loop list flex-wrap
@@ -387,7 +400,6 @@ $overflow:visible,hidden,clip,scroll,auto;
 @each $o in $overflow {
     %overflow-#{$o}{
         overflow: $o ;
-        overflow: clip;
     }
 }
 @each $o in $opacity {
@@ -396,3 +408,19 @@ $overflow:visible,hidden,clip,scroll,auto;
     }
 }
     // End loop list overflow
+// vertical-align
+    // Start loop list vertical-align
+$vertical-align:baseline,sub,super,text-top,text-bottom,middle,top,bottom;
+@each $va in $vertical-align {
+    %vertical-align-#{$va}{
+        vertical-align: $va;
+    }
+}
+    // End loop list vertical-align
+// height width
+%height-100{
+    height: 100%;
+}
+%width-100{
+    width: 100%;
+}

@@ -1,6 +1,8 @@
 let lang                = document.querySelector("footer .lang div:first-child"),
     parentSpanLang      = lang.nextElementSibling,
     boxSpanLang         = parentSpanLang.children;
+// function click of Element => toggle class
+let toggleClass = (element, NameClass) => element.classList.toggle(NameClass);
 // function loop of children
 let loopChildrenLang = children => [...children].forEach(child => child.addEventListener("click", _ => {
     if (lang.lastElementChild.innerHTML === child.innerHTML) { removeClass(parentSpanLang, "select-show"); return; }

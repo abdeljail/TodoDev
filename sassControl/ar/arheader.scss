@@ -1,0 +1,54 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+header{
+    nav{
+        .container{
+            .content-nav{
+                .logo{
+                    a{
+                        .box-img{
+                            img:nth-child(2){
+                                @include right(11px);
+                                @include top(6px);
+                                left: inherit;
+                            }
+                            img:nth-child(3){
+                                @include right(19px);
+                                @include top(29px);
+                                left: inherit;
+                            }
+                            &:hover{
+                                img:nth-child(2){
+                                    @include top(4px);
+                                }
+                                img:nth-child(3){
+                                    @include top(31px);
+                                }
+                            }
+                        }
+                    }
+                }
+                .portfoloi{
+                    @extend %relative;
+                    @include width(60);
+                    @include height(60);
+                        @extend %display-flex;
+                        @extend %justify-content-flex-end;
+                        @extend %align-items-center;
+                    .img-p{
+                    }
+                    .rotate{
+                            @include left(12px);
+                            right: inherit;
+                    }
+                    ul{
+                        @include top(45px);
+                        @include right(-192px);
+                        left: inherit;
+                    }
+                }
+            }
+        }
+    }
+}

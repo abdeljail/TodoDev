@@ -1,4 +1,13 @@
 <?php
+session_start();
+if(isset($_SESSION["name"]) && isset($_SESSION["email"]) && isset($_SESSION["id"])){
+    header("Location:http://localhost/tododev/control/dach.php");
+    exit;
+}
+if(!empty($_SESSION["name"]) && !empty($_SESSION["email"]) && !empty($_SESSION["id"])){
+    header("Location:http://localhost/tododev/control/dach.php");
+    exit;
+}
 include_once "php/include/function/fun.php";
 $l = "en.php";
 $nameLang = "English";
@@ -47,11 +56,10 @@ require_once getPathFile('include/template/body.php');?>
 </section>
 <?php 
 require_once getPathFile('include/template/footer.php');
-script("","global");
 script("","footer");
 ?>
 <script>
-  document.querySelector(".btn button").addEventListener("click",_=> window.location.href = "http://localhost/tododev/control/?" + document.URL.split("?")[1] ); //document.URL.split("?")
+  document.querySelector(".btn button").addEventListener("click",_=> window.location.href = "http://localhost/tododev/control/?" + document.URL.split("?")[1] );
   user = document.URL.split("user=")[1] 
   var user = document.URL.split("user=")[1] === undefined ? "user" : document.URL.split("user=")[1];
   document.querySelector("#user").innerHTML = user;
