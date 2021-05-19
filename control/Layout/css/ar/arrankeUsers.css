@@ -1,0 +1,18 @@
+.lang div:first-child span {
+  margin-right: 10px; }
+
+.ranke .content-ranke .content .box-content .content-search .text-input input {
+  border-right-width: 6px; }
+
+.ranke .content-ranke .content .box-content .content-search .text-input input {
+  border-right-style: solid; }
+
+body {
+  direction: rtl; }
+
+.ranke .content-ranke .content .box-content .content-search .text-input input {
+  border-left-width: 0px !important; }
+.ranke .content-ranke .content .box-content .pack a {
+  text-align: left !important; }
+
+/*# sourceMappingURL=arrankeUsers.css.map */

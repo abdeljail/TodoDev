@@ -6,6 +6,8 @@ let logOut = document.querySelector(".portfoloi ul li:last-child button");
 let toggleClass = (element, NameClass) => element.classList.toggle(NameClass);
 // function  Element => remove class
 let removeClass = (element, NameClass) => element.classList.remove(NameClass);
+// function  add Event toggle Class
+let addEventClass = (element, el, nameClass) => element.addEventListener("click", _ => toggleClass(el, nameClass));
 // function  Element => add class
 let addClass = (element, NameClass) => element.classList.add(NameClass);
 // function check url of page
@@ -30,12 +32,9 @@ for (let i = 0; i < asideLinks.length;i++){
 
 // hedaer => div.portfoloi => div.img-p
 // hedaer => div.portfoloi => ul
-// click of div.img for toggle class in tag ul
-showPortfoloi.addEventListener("click", _=> {
-    toggleClass(showPortfoloi.nextElementSibling.nextElementSibling,"show-ul-h");
-    toggleClass(showPortfoloi.nextElementSibling,"show-ul-h");
-});
-
+// click of div.img for toggle class in tag ul;
+addEventClass(showPortfoloi, showPortfoloi.nextElementSibling.nextElementSibling,"show-ul-h");
+addEventClass(showPortfoloi, showPortfoloi.nextElementSibling, "show-ul-h");
 // log out 
 // header => div.portfoloi => ul => button;
 logOut.addEventListener("click",_=> window.location.href ="http://localhost/tododev/control/php/logOut.php");

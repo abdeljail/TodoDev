@@ -29,18 +29,18 @@
         }
     }
 }
-// .container{
-//     @include md-768-991{
-//         width:720px;
-//     }
-// }
-// .container{
-//     @include md-992-1199{
-//         width:960px;
-//     }
-// }
-// .container{
-//     @include md-1400{
-//         width:1320px;
-//     }
-// }
+.container{
+    @include md-768-991{
+        width:720px;
+    }
+}
+.container{
+    @include md-992-1199{
+        width:960px;
+    }
+}
+.container{
+    @include md-1400{
+        width:1320px;
+    }
+}

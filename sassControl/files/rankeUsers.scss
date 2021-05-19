@@ -1,0 +1,235 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+button,input{
+    border: none;
+    outline: none;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+*{
+    @extend %margin-0;
+    @extend %padding-0;
+    @extend %box-sizing;
+}
+body{
+    @extend %background-color-dark_white;
+    @extend %font-size-16;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    @extend %display-block;
+    text-decoration: none;
+}
+.ranke{
+    .content-ranke{
+        @extend %display-flex;
+        @extend %flex-wrap-wrap;
+        min-height: 100vh;
+        .content{
+            @include flex-grow(1);
+            @include flex-basis(200px);
+            @extend %padding-20-20;
+            .box-content{
+                @extend %display-flex;
+                @extend %justify-content-start;
+                @extend %flex-direction-column;
+                .hedaer-ranke-search{
+                    @extend %padding-0-20;
+                    .content-search{
+                        @extend %background-color-dark_green;
+                        @extend %border-radius-4;
+                        @extend %padding-6-16;
+                        @extend %border-style-solid;
+                        @extend %border-width-2;
+                        @extend %border-color-yellow;
+                        .box-input{
+                            @extend %display-flex;
+                            >div{
+                                >*{
+                                    @extend %padding-10-10;
+                                    @extend %font-size-18;
+                                }
+                            }
+                            .icon{
+                                button{ 
+                                        @extend %pointer;
+                                        @extend %background-color-black;
+                                    i{
+                                        @extend %font-weight-500;
+                                        @extend %color-yellow;
+                                    }
+                                }
+                            }
+                            .text-input{
+                                @include flex-grow(1);
+                                label{
+                                    @extend %display-none;
+                                }
+                                input{
+                                    @extend %width-100;    
+                                    @extend %border-style-left-solid;
+                                    @extend %border-width-left-6;
+                                    @extend %border-color-gray-500;
+                                    &:focus{
+                                        @extend %border-color-dark_green;
+                                    }
+                                }
+                            }
+                            .select-year{    
+                                @include width(122);
+                                @extend %background-color-black;
+                                @extend %relative;
+                                >*{
+                                    @extend %color-white;
+                                }
+                                div:first-child{
+                                    @extend %pointer;
+                                    @extend %center;
+                                }
+                                .show-box-select{
+                                    @extend %z-index-1;
+                                    @extend %opacity-1;
+                                }
+                                .box-select{
+                                    @include top(50px);
+                                    @extend %width-100;
+                                    @extend %z-index--1;
+                                    @extend %opacity-0;
+                                    @extend %padding-10;
+                                    @extend %border-radius-top-left-4;
+                                    @extend %border-radius-bottom-left-4;
+                                    @extend %border-radius-bottom-left-4;
+                                    @extend %absolute;
+                                    @extend %background-color-white;
+                                    @extend %transition-timing-function-ease-in-out;
+                                    @extend %transition-property-all;
+                                    @extend %transition-duration-3;
+                                    span{  
+                                        @extend %pointer;
+                                        @extend %padding-8;
+                                        @extend %color-black;
+                                        @extend %display-block;
+                                        @extend %font-size-14;
+                                        @extend %transition-timing-function-ease-in-out;
+                                        @extend %transition-property-all;
+                                        @extend %transition-duration-3;
+                                        @extend %border-radius-6;
+                                        &:hover{
+                                            @extend %background-color-black;
+                                            @extend %color-white;
+                                        }
+                                    }
+                                    &::after{
+                                        @include width(24);
+                                        @include height(24);
+                                        @include top(-12px);
+                                        @include left(50px);
+                                        @extend %absolute;
+                                        @extend %z-index--1;
+                                        @extend %left;
+                                        @extend %content;
+                                        @extend %background-color-white;
+                                        transform: rotate(45deg);
+                                        -moz-transform: rotate(45deg);
+                                        -o-transform: rotate(45deg);
+                                        -webkit-transform: rotate(45deg);
+                                        -ms-transform: rotate(45deg);
+                                    }
+                                }
+                                i{
+                                    @extend %vertical-align-top;
+                                }
+                            }
+                        }
+                    }
+                }
+                .body-ranke-res{
+                    @extend %padding-20;
+                    .content-res{
+                        @extend %padding-20;
+                        @extend %border-style-top-solid;
+                        @extend %border-width-top-2;
+                        @extend %border-color-top-para;
+                        @extend %display-flex;
+                        @extend %flex-wrap-wrap;
+                        @extend %justify-content-start;
+                        .pack{
+                            @extend %border-radius-4;
+                            @extend %background-color-white;
+                            @extend %overflow-hidden;
+                            @extend %box-shadow-para;
+                            @extend %transition-timing-function-ease-in-out;
+                            @extend %transition-property-all;
+                            @extend %transition-duration-1;
+                            @extend %border-style-solid;
+                            @extend %border-width-1;
+                            @extend %border-color-dark_green;
+                            @extend %margin-10;
+                            >div{
+                                @extend %padding-10-16;
+                            }
+                            .header-pack{
+                                @extend %background-color-green;
+                                h4{
+                                    @extend %capitalize;
+                                    @extend %color-white;
+                                    @extend %font-weight-500;
+                                }
+                            }
+                            .body-pack{
+                                @extend %display-flex;
+                                @extend %flex-direction-column;
+                                .number-ranke{
+                                    @extend %display-flex;
+                                    @extend %justify-content-center;
+                                    @extend %padding-10-0;
+                                    div{
+                                        @include width(40);
+                                        @include height(40);
+                                        @extend %center;
+                                        @extend %color-white;
+                                        @extend %font-size-18;
+                                        @extend %font-weight-700;
+                                        @extend %background-color-dark_green;
+                                        box-shadow: 0 0 10px $dark_green;
+                                        line-height: 40px;
+                                        border-radius:50%;
+                                    }
+                                }
+                                .state-ranke{
+                                    @extend %padding-10-0;
+                                    @extend %display-flex;
+                                    @extend %justify-content-space-around;
+                                    @extend %align-items-center;
+                                }
+                                .sec{
+                                    @extend %color-blue_sky;
+                                }
+                                .dan{
+                                    @extend %color-danger_0;
+                                }
+                            }
+                            .footer-pack{
+                                @extend %background-color-green;
+                                a{
+                                    @extend %font-size-10;
+                                    @extend %font-weight-500;
+                                    @extend %right;
+                                    @extend %color-black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@import "../include/mediaQuery/container";
+@import "../include/mediaQuery/rankeUsers";

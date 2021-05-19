@@ -1,0 +1,250 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+button,input{
+    border: none;
+    outline: none;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+*{
+    @extend %margin-0;
+    @extend %padding-0;
+    @extend %box-sizing;
+}
+body{
+    @extend %background-color-dark_white;
+    @extend %font-size-16;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    @extend %display-block;
+    text-decoration: none;
+}
+.messanger{
+    .content-messanger{
+        @extend %display-flex;
+        @extend %flex-wrap-wrap;
+        min-height: 100vh;
+        .box-content{
+            @include flex-grow(1);
+            @include flex-basis(200px);
+            @extend %display-flex;
+            @extend %flex-direction-column;        
+            @extend %overflow-auto;
+            .all-users::-webkit-scrollbar{
+                width: 4px;
+            }
+            .all-users::-webkit-scrollbar-thumb{
+                @extend %border-radius-10;
+                @extend %background-color-para;
+            }
+            .all-users{
+                @extend %padding-10-15;
+                @extend %width-100; 
+                @extend %overflow-auto;
+                @extend %background-color-white;
+                .content-all{
+                    @extend %width-100;
+                    ul{
+                        @extend %display-inline-flex;
+                        .active-user{
+                            box-shadow: 0 0 14px $green;
+                        }
+                        .user{
+                            @include height(50);
+                            @include width(50);
+                            @include flex-basis(20px);
+                            @extend %relative;
+                            @extend %overflow-hidden;
+                            @extend %border-style-solid;
+                            @extend %border-width-2;
+                            @extend %border-color-green;
+                            @extend %pointer;
+                            @extend %margin-0-10;
+                            @extend %transition-timing-function-ease-in-out;
+                            @extend %transition-property-all;
+                            @extend %transition-duration-3;
+                            border-radius: 50%;
+                            img{
+                                @extend %width-100;
+                                @extend %height-100;
+                                @extend %transition-timing-function-ease-in-out;
+                                @extend %transition-property-all;
+                                @extend %transition-duration-3;
+                            }
+                            span{
+                                @include height(20);
+                                @include width(20);
+                                @include left(calc(50% - 10px));
+                                @include bottom(-8px);
+                                @extend %absolute;
+                                @extend %background-color-danger_0;
+                                @extend %color-white;
+                                @extend %transition-timing-function-ease-in-out;
+                                @extend %transition-property-all;
+                                @extend %transition-duration-3;
+                                @extend %font-size-12;
+                                @extend %center;
+                            }
+                            &:hover img{
+                                -o-transform: scale(1.2) rotate(5deg);
+                                -moz-transform: scale(1.2) rotate(5deg);
+                                -webkit-transform: scale(1.2) rotate(5deg);
+                                -ms-transform: scale(1.2) rotate(5deg);
+                                transform: scale(1.2) rotate(5deg);
+                            }
+                            &:hover span{
+                                @include bottom(100%);
+                            }
+                        }
+                    }
+                }
+            }
+            .send-new{ 
+                @include flex-grow(1);
+                @extend %display-flex;
+                @extend %flex-wrap-wrap;
+                @extend %justify-content-space-between;
+                margin-top: -20px;
+                .send{
+                    @include flex-grow(1);
+                    @extend %display-flex;
+                    @extend %flex-wrap-wrap;
+                    @extend %justify-content-center;
+                    @extend %align-items-center;
+                    .content-send{
+                        @include width(350);
+                        @include height(400);
+                        @extend %display-flex;
+                        @extend %flex-direction-column;
+                        @extend %border-radius-4;
+                        @extend %border-style-solid;
+                        @extend %border-color-para;
+                        @extend %border-width-1;
+                        @extend %background-color-white_F9;
+                        >div{
+                            @extend %padding-10-15;
+                        }
+                        .header{
+                            @extend %background-color-dark_green;
+                            h4{
+                                @extend %padding-2-0;
+                                @extend %capitalize;
+                                @extend %color-white;
+                                @extend %font-weight-500;
+                            }
+                        }
+                        .body::-webkit-scrollbar{
+                            width: 8px;
+                            background-color: #F5F5F5;
+                        }
+
+                        .body::-webkit-scrollbar-thumb{
+                            @extend %border-radius-10;
+                            @extend %background-color-dark_green;
+                        }
+                        .body{
+                            @include flex-grow(1);
+                            @extend %overflow-auto;
+                            >div{
+                                @extend %padding-4-0; 
+                                @extend %display-flex;
+                                @extend %align-items-center;
+                            }
+                            .left{
+                                @extend %justify-content-start;
+                            }
+                            .right{
+                                @extend %justify-content-flex-end;
+                            }
+                            .left,.right{
+                                &:hover .btn{
+                                    @extend %opacity-1;
+                                }
+                            }
+                            .c-m{
+                                @include width(250);
+                                @extend %padding-4-10;
+                                @extend %border-radius-4;
+                                @extend %font-size-12;
+                                @extend %background-color-dark_white;
+                                line-height: 18px;
+                            }
+                            .btn{
+                                @include height(25);
+                                @include width(25);
+                                @extend %relative;
+                                @extend %margin-0-10;
+                                @extend %background-color-para;
+                                @extend %display-flex;
+                                @extend %justify-content-center;
+                                @extend %align-items-center;
+                                @extend %pointer;
+                                @extend %transition-timing-function-ease-in-out;
+                                @extend %transition-property-all;
+                                @extend %transition-duration-3;
+                                @extend %opacity-0;
+                                border-radius: 50%;
+                                .show-option{
+                                    @extend %opacity-1;
+                                }
+                                .option{
+                                    @include top(-25px);
+                                    @include left(-50%);
+                                    @extend %absolute;
+                                    @extend %auto;
+                                    @extend %padding-4;
+                                    @extend %background-color-black;
+                                    @extend %font-size-14;
+                                    @extend %border-radius-4;
+                                    @extend %color-white;
+                                    @extend %opacity-0;
+                                    div{
+                                        @extend %pointer;
+                                    }
+                                }
+                                i{
+                                    @extend %font-weight-500;
+                                    @extend %color-white;
+                                    -o-transform: rotate(45deg);
+                                    -moz-transform: rotate(45deg);
+                                    -webkit-transform: rotate(45deg);
+                                    -ms-transform: rotate(45deg);
+                                    transform: rotate(45deg);
+                                }
+                            }
+                            
+                        }
+                        .footer{
+                            @extend %background-color-black;
+                            div{
+                                @extend %background-color-white;
+                                @extend %border-radius-20;
+                                @extend %overflow-hidden;
+                                @extend %display-flex;
+                                @extend %padding-2-0;
+                                input{
+                                    @include flex-grow(1);
+                                    @extend %padding-10-10;
+                                }
+                                button{
+                                    @extend %background-color-white;
+                                    @extend %padding-0-8;
+                                    i{
+                                        @extend %font-weight-500;
+                                        @extend %font-size-30;
+                                        @extend %color-blue_sky;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@import "../include/mediaQuery/container";

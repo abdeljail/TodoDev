@@ -7,4 +7,4 @@ let loopChildrenLang = children => [...children].forEach(child => child.addEvent
     window.location.href = document.URL.split("?")[0] + "?lang=" + child.dataset.set;
 }));
 loopChildrenLang(boxSpanLang);
-lang.addEventListener("click", _ => { toggleClass(parentSpanLang, "select-show"); });
+addEventClass(lang, parentSpanLang, "select-show");

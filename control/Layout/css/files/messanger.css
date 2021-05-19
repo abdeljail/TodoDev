@@ -1,0 +1,303 @@
+.messanger .content-messanger .box-content .all-users .content-all ul .user span, .messanger .content-messanger .box-content .send-new .send .content-send .header h4, .messanger .content-messanger .box-content .send-new .send .content-send .body .btn .option, .messanger .content-messanger .box-content .send-new .send .content-send .body .btn i {
+  color: #FFF; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .footer div button i {
+  color: #007EEC; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .body .btn .option, .messanger .content-messanger .box-content .send-new .send .content-send .footer {
+  background-color: #020313; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .header, .messanger .content-messanger .box-content .send-new .send .content-send .body::-webkit-scrollbar-thumb {
+  background-color: #026057; }
+
+.messanger .content-messanger .box-content .all-users, .messanger .content-messanger .box-content .send-new .send .content-send .footer div, .messanger .content-messanger .box-content .send-new .send .content-send .footer div button {
+  background-color: #FFF; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send {
+  background-color: #F9F9F9; }
+
+body, .messanger .content-messanger .box-content .send-new .send .content-send .body .c-m {
+  background-color: #F0F2F4; }
+
+.messanger .content-messanger .box-content .all-users::-webkit-scrollbar-thumb, .messanger .content-messanger .box-content .send-new .send .content-send .body .btn {
+  background-color: #546274; }
+
+.messanger .content-messanger .box-content .all-users .content-all ul .user span {
+  background-color: #F15555; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .footer div button {
+  padding: 0px 8px; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .header h4, .messanger .content-messanger .box-content .send-new .send .content-send .footer div {
+  padding: 2px 0px; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .body > div {
+  padding: 4px 0px; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .body .c-m {
+  padding: 4px 10px; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .footer div input {
+  padding: 10px 10px; }
+
+.messanger .content-messanger .box-content .all-users, .messanger .content-messanger .box-content .send-new .send .content-send > div {
+  padding: 10px 15px; }
+
+* {
+  padding: 0px; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .body .btn .option {
+  padding: 4px; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .header h4, .messanger .content-messanger .box-content .send-new .send .content-send .footer div {
+  padding: 2px 0; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .body > div {
+  padding: 4px 0; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .footer div button {
+  padding: 0 8px; }
+
+* {
+  margin: 0px; }
+
+.messanger .content-messanger .box-content .all-users .content-all ul .user, .messanger .content-messanger .box-content .send-new .send .content-send .body .btn {
+  margin: 0 10px; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .header h4, .messanger .content-messanger .box-content .send-new .send .content-send .body .btn i, .messanger .content-messanger .box-content .send-new .send .content-send .footer div button i {
+  font-weight: 500; }
+
+.messanger .content-messanger .box-content .all-users .content-all ul .user span, .messanger .content-messanger .box-content .send-new .send .content-send .body .c-m {
+  font-size: 12px; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .body .btn .option {
+  font-size: 14px; }
+
+body {
+  font-size: 16px; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .footer div button i {
+  font-size: 30px; }
+
+.messanger .content-messanger .box-content .all-users .content-all ul .user span {
+  text-align: center; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .header h4 {
+  text-transform: capitalize; }
+
+a {
+  display: block; }
+
+.messanger .content-messanger, .messanger .content-messanger .box-content, .messanger .content-messanger .box-content .send-new, .messanger .content-messanger .box-content .send-new .send, .messanger .content-messanger .box-content .send-new .send .content-send, .messanger .content-messanger .box-content .send-new .send .content-send .body > div, .messanger .content-messanger .box-content .send-new .send .content-send .body .btn, .messanger .content-messanger .box-content .send-new .send .content-send .footer div {
+  display: flex; }
+
+.messanger .content-messanger .box-content .all-users .content-all ul {
+  display: inline-flex; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send {
+  border-width: 1px; }
+
+.messanger .content-messanger .box-content .all-users .content-all ul .user {
+  border-width: 2px; }
+
+.messanger .content-messanger .box-content .all-users .content-all ul .user, .messanger .content-messanger .box-content .send-new .send .content-send {
+  border-style: solid; }
+
+.messanger .content-messanger .box-content .all-users .content-all ul .user {
+  border-color: #009688; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send {
+  border-color: #546274; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send, .messanger .content-messanger .box-content .send-new .send .content-send .body .c-m, .messanger .content-messanger .box-content .send-new .send .content-send .body .btn .option {
+  border-radius: 4px; }
+
+.messanger .content-messanger .box-content .all-users::-webkit-scrollbar-thumb, .messanger .content-messanger .box-content .send-new .send .content-send .body::-webkit-scrollbar-thumb {
+  border-radius: 10px; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .footer div {
+  border-radius: 20px; }
+
+.messanger .content-messanger .box-content .all-users .content-all ul .user, .messanger .content-messanger .box-content .all-users .content-all ul .user img, .messanger .content-messanger .box-content .all-users .content-all ul .user span, .messanger .content-messanger .box-content .send-new .send .content-send .body .btn {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all; }
+
+.messanger .content-messanger .box-content .all-users .content-all ul .user, .messanger .content-messanger .box-content .all-users .content-all ul .user img, .messanger .content-messanger .box-content .all-users .content-all ul .user span, .messanger .content-messanger .box-content .send-new .send .content-send .body .btn {
+  transition-property: all; }
+
+.messanger .content-messanger .box-content .all-users .content-all ul .user, .messanger .content-messanger .box-content .all-users .content-all ul .user img, .messanger .content-messanger .box-content .all-users .content-all ul .user span, .messanger .content-messanger .box-content .send-new .send .content-send .body .btn {
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out; }
+
+.messanger .content-messanger .box-content .all-users .content-all ul .user, .messanger .content-messanger .box-content .all-users .content-all ul .user img, .messanger .content-messanger .box-content .all-users .content-all ul .user span, .messanger .content-messanger .box-content .send-new .send .content-send .body .btn {
+  transition-timing-function: ease-in-out; }
+
+.messanger .content-messanger .box-content .all-users .content-all ul .user, .messanger .content-messanger .box-content .all-users .content-all ul .user img, .messanger .content-messanger .box-content .all-users .content-all ul .user span, .messanger .content-messanger .box-content .send-new .send .content-send .body .btn {
+  transition-duration: 0.3s; }
+
+.messanger .content-messanger .box-content .all-users .content-all ul .user, .messanger .content-messanger .box-content .send-new .send .content-send .body .btn {
+  position: relative; }
+
+.messanger .content-messanger .box-content .all-users .content-all ul .user span, .messanger .content-messanger .box-content .send-new .send .content-send .body .btn .option {
+  position: absolute; }
+
+.messanger .content-messanger .box-content .all-users .content-all ul .user, .messanger .content-messanger .box-content .send-new .send .content-send .body .btn, .messanger .content-messanger .box-content .send-new .send .content-send .body .btn .option div {
+  cursor: pointer; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .body .btn .option {
+  cursor: auto; }
+
+.messanger .content-messanger .box-content .send-new .send, .messanger .content-messanger .box-content .send-new .send .content-send .body .btn {
+  justify-content: center; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .body .left {
+  justify-content: start; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .body .right {
+  justify-content: flex-end; }
+
+.messanger .content-messanger .box-content .send-new {
+  justify-content: space-between; }
+
+.messanger .content-messanger .box-content .send-new .send, .messanger .content-messanger .box-content .send-new .send .content-send .body > div, .messanger .content-messanger .box-content .send-new .send .content-send .body .btn {
+  align-items: center; }
+
+.messanger .content-messanger .box-content, .messanger .content-messanger .box-content .send-new .send .content-send {
+  flex-direction: column; }
+
+.messanger .content-messanger, .messanger .content-messanger .box-content .send-new, .messanger .content-messanger .box-content .send-new .send {
+  flex-wrap: wrap; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .body .btn, .messanger .content-messanger .box-content .send-new .send .content-send .body .btn .option {
+  opacity: 0; }
+
+.messanger .content-messanger .box-content .send-new .send .content-send .body .left:hover .btn, .messanger .content-messanger .box-content .send-new .send .content-send .body .right:hover .btn, .messanger .content-messanger .box-content .send-new .send .content-send .body .btn .show-option {
+  opacity: 1; }
+
+.messanger .content-messanger .box-content .all-users .content-all ul .user, .messanger .content-messanger .box-content .send-new .send .content-send .footer div {
+  overflow: hidden; }
+
+.messanger .content-messanger .box-content, .messanger .content-messanger .box-content .all-users, .messanger .content-messanger .box-content .send-new .send .content-send .body {
+  overflow: auto; }
+
+.messanger .content-messanger .box-content .all-users .content-all ul .user img {
+  height: 100%; }
+
+.messanger .content-messanger .box-content .all-users, .messanger .content-messanger .box-content .all-users .content-all, .messanger .content-messanger .box-content .all-users .content-all ul .user img {
+  width: 100%; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+button, input {
+  border: none;
+  outline: none; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.messanger .content-messanger {
+  min-height: 100vh; }
+  .messanger .content-messanger .box-content {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 200px;
+    flex-basis: 200px; }
+    .messanger .content-messanger .box-content .all-users::-webkit-scrollbar {
+      width: 4px; }
+    .messanger .content-messanger .box-content .all-users .content-all ul .active-user {
+      box-shadow: 0 0 14px #009688; }
+    .messanger .content-messanger .box-content .all-users .content-all ul .user {
+      height: 50px;
+      width: 50px;
+      -ms-flex-preferred-size: 20px;
+      flex-basis: 20px;
+      border-radius: 50%; }
+      .messanger .content-messanger .box-content .all-users .content-all ul .user span {
+        height: 20px;
+        width: 20px;
+        left: calc(50% - 10px);
+        bottom: -8px; }
+      .messanger .content-messanger .box-content .all-users .content-all ul .user:hover img {
+        -o-transform: scale(1.2) rotate(5deg);
+        -moz-transform: scale(1.2) rotate(5deg);
+        -webkit-transform: scale(1.2) rotate(5deg);
+        -ms-transform: scale(1.2) rotate(5deg);
+        transform: scale(1.2) rotate(5deg); }
+      .messanger .content-messanger .box-content .all-users .content-all ul .user:hover span {
+        bottom: 100%; }
+    .messanger .content-messanger .box-content .send-new {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      margin-top: -20px; }
+      .messanger .content-messanger .box-content .send-new .send {
+        -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1; }
+        .messanger .content-messanger .box-content .send-new .send .content-send {
+          width: 350px;
+          height: 400px; }
+          .messanger .content-messanger .box-content .send-new .send .content-send .body::-webkit-scrollbar {
+            width: 8px;
+            background-color: #F5F5F5; }
+          .messanger .content-messanger .box-content .send-new .send .content-send .body {
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1; }
+            .messanger .content-messanger .box-content .send-new .send .content-send .body .c-m {
+              width: 250px;
+              line-height: 18px; }
+            .messanger .content-messanger .box-content .send-new .send .content-send .body .btn {
+              height: 25px;
+              width: 25px;
+              border-radius: 50%; }
+              .messanger .content-messanger .box-content .send-new .send .content-send .body .btn .option {
+                top: -25px;
+                left: -50%; }
+              .messanger .content-messanger .box-content .send-new .send .content-send .body .btn i {
+                -o-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg); }
+          .messanger .content-messanger .box-content .send-new .send .content-send .footer div input {
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1; }
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%; } }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    width: 540px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 720px; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 960px; } }
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px; } }
+
+/*# sourceMappingURL=messanger.css.map */

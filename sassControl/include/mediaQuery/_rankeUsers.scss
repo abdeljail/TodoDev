@@ -1,0 +1,42 @@
+
+.new{
+    @include md-575{
+        .content{
+            padding: 0 !important;
+        }
+        .content-new{
+            flex-direction: column;
+            .pack{
+                margin: 7px auto !important;
+            }
+        }
+    }
+}
+.new{
+    @include md-576-767{
+        .content-new{
+            flex-direction: column;
+            .pack{
+                margin: 10px auto !important;
+            }
+        }
+    }
+}
+.new{
+    @include md-768-991{
+        .content-new{
+            .pack{
+                margin: 10px auto !important;
+            }
+        }
+    }
+}
+.new{
+    @include md-992-1199{
+        .content-new{
+            .pack{
+                margin: 5px !important;
+            }
+        }
+    }
+}

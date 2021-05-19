@@ -4,7 +4,7 @@ require_once "php/include/checkSessionUser.php";
 #include file init
 require_once "php/include/init.php";
 # include files in 
-include_once getPathFile("include/lang/ar.php");
+include_once getPathFile("include/lang/en.php");
 $titlePage = "dachbord";
 // # include file start.php
 require_once getPathFile('include/template/start.php');
@@ -13,10 +13,10 @@ links('','files/dach');
 links('','files/header');
 links('','files/aside');
 links('','files/footer1');
-links('','ar/ardach');
-links('','ar/araside');
-links('','ar/arheader');
-links('','ar/arfooter1');
+// links('','ar/ardach');
+// links('','ar/araside');
+// links('','ar/arheader');
+// links('','ar/arfooter1');
 # echo title Page
 getTitlePage();
 #include file body.php

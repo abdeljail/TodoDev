@@ -1,0 +1,10 @@
+.lang div:first-child span {
+  margin-right: 10px; }
+
+body {
+  direction: rtl; }
+
+.new .content-new .content .pack a {
+  text-align: left !important; }
+
+/*# sourceMappingURL=arnewUsers.css.map */

@@ -1,0 +1,31 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+body{
+    direction: rtl;
+}
+.lang div:first-child span{
+    @extend %margin-right-10;
+}
+.ranke{
+    .content-ranke{
+        .content{
+            .box-content{
+                .content-search{
+                    .text-input{
+                        input{
+                            border-left-width: 0px !important;
+                            @extend %border-width-right-6;
+                            @extend %border-style-right-solid;
+                        }
+                    }
+                }
+                .pack{
+                    a{
+                        text-align: left !important;
+                    }
+                }
+            }
+        }
+    }
+}

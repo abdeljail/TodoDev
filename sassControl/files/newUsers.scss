@@ -1,0 +1,93 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+button,input{
+    border: none;
+    outline: none;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+*{
+    @extend %margin-0;
+    @extend %padding-0;
+    @extend %box-sizing;
+}
+body{
+    @extend %background-color-dark_white;
+    @extend %font-size-16;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    @extend %display-block;
+    text-decoration: none;
+}
+.new{
+    .content-new{
+        @extend %display-flex;
+        @extend %flex-wrap-wrap;
+        min-height: 100vh;
+        .content{
+            @include flex-grow(1);
+            @include flex-basis(200px);
+            @extend %padding-20-20;
+            .new-content{
+                @extend %display-flex;
+                @extend %justify-content-start;
+                    .content-res{
+                        @extend %padding-20;
+                        @extend %display-flex;
+                        @extend %flex-wrap-wrap;
+                        @extend %justify-content-start;
+                        .pack{
+                            @extend %border-radius-4;
+                            @extend %background-color-white;
+                            @extend %margin-10;
+                            @extend %overflow-hidden;
+                            @extend %box-shadow-para;
+                            @extend %transition-timing-function-ease-in-out;
+                            @extend %transition-property-all;
+                            @extend %transition-duration-1;
+                            @extend %border-style-solid;
+                            @extend %border-width-1;
+                            @extend %border-color-green;
+                            >div{
+                                @extend %padding-10-16;
+                            }
+                            .header-pack{
+                                @extend %background-color-dark_green;
+                                h4{
+                                    @extend %capitalize;
+                                    @extend %color-white;
+                                    @extend %font-weight-500;
+                                }
+                            }
+                            .body-pack{
+                                @extend %display-flex;
+                                @extend %flex-direction-column;
+                                div{
+                                    @extend %color-para;
+                                    @extend %padding-2-0;
+                                }
+                            }
+                            .footer-pack{
+                                @extend %background-color-dark_green;
+                                a{
+                                    @extend %font-size-10;
+                                    @extend %font-weight-500;
+                                    @extend %right;
+                                    @extend %color-yellow;
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+    }
+}
+
+
+
+@import "../include/mediaQuery/container";
+@import "../include/mediaQuery/rankeUsers";

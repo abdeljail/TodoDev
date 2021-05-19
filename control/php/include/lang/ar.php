@@ -26,7 +26,14 @@
             "link4" => "إعلان المستخدمين",
             "link5" => "رسول الكل",
             "link6" => "البريد الإلكتروني",
+            "link7" => "إنشاء حساب",
         // Start page aside 
+        // Start page ranke Users
+            "ranke" => "عرض في ليبيا",
+        // End page ranke Users
+        // Start page new Users 
+            "portfolio" => "عرض في الحساب",
+        // End page new Users
         // Start Page dach
             "h31" => "المستخدمين رتبة",
             "h32" => "إنشاء حساب",

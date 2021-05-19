@@ -14,19 +14,25 @@
                 </a>
             </li>
             <li>
-                <a href="" data-url="/newUsers">
+                <a href="" data-url="/rankeUsers" >
                     <img src="./Layout/image/top-three.png" alt="Ranke" width="24px">
                     <span><?php echo lang("link3")?></span>
                 </a>
             </li>
             <li>
-                <a href="" data-url="/rankeUsers">
+                <a href="" data-url="/newUsers">
+                    <img src="./Layout/image/createAccount.png" alt="acreate account" width="24px">
+                    <span><?php echo lang("link7")?></span>
+                </a>
+            </li>
+            <li>
+                <a href="" data-url="/newUsers">
                     <img src="./Layout/image/declaration.png" alt="declaration" width="24px">
                     <span><?php echo lang("link4")?></span>
                 </a>
             </li>
             <li>
-                <a href="" data-url="/dach">
+                <a href="" data-url="/messanger">
                     <img src="./Layout/image/comments.png" alt="dashboard" width="24px">
                     <span><?php echo lang("link5")?></span>
                 </a>

@@ -26,6 +26,7 @@
             "link4" => "déclaration Utilisateurs",
             "link5" => "messager Tout",
             "link6" => "e-mail",
+            "link7" => "créer un compte", 
         // Start page aside 
         // Start Page dach
             "h31" => "Utilisateurs de Ranke",
@@ -33,8 +34,13 @@
             "h33" => "Messagère",
             "h34" => "L'information est complète",
             "show1" => "Voir tout",
-
         // End Page dach
+        // Start page ranke Users
+            "ranke" => "Spectacle en Libye",
+        // End page ranke Users
+        // Start page new Users 
+            "portfolio" => "Afficher dans le compte",
+        // End page new Users
         // Start footer
             "en" => "Englais",
             "fr" => "France",

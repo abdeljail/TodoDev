@@ -26,6 +26,7 @@
             "link4" => "declaration Users",
             "link5" => "messanger All",
             "link6" => "email",
+            "link7" => "create account",
         // Start page aside 
         // Start Page dach
             "h31" => "Ranke Users",
@@ -35,6 +36,12 @@
             "show1" => "View All",
 
         // End Page dach
+        // Start page ranke Users 
+            "ranke" => "View in mibyan",
+        // End page ranke Users
+        // Start page new Users 
+            "portfolio" => "View in Potfolyo",
+        // End page new Users
         // Start footer
             "en" => "English",
             "fr" => "France",

@@ -22,7 +22,6 @@ $colors:("black": $black,
     }
 }
    // End loop list color
-
 // color 
    // Start loop list background-color
 @each $name , $color in $colors {
@@ -35,10 +34,10 @@ $colors:("black": $black,
 $size_padding: 0,2,4,5,6,8,10,12,14,15,16,20;
 @each $i in $size_padding {
     @each $j in $size_padding {
-    %padding-#{$i}-#{$j}{
-        padding: #{$i}px #{$j}px;
+        %padding-#{$i}-#{$j}{
+            padding: #{$i}px #{$j}px;
+        }
     }
-}
 }
 @each $sp in $size_padding {
     %padding-#{$sp}{
@@ -146,7 +145,7 @@ $text-transform:capitalize,uppercase,lowercase;
         display: -ms-#{$f};
     }   
 }
-$display: block,inline-block,flex,inline-flex;
+$display: none,block,inline-block,flex,inline-flex;
 @each $d in $display {
     @if $d == flex {
         @include display_prefix(box,flexbox);
@@ -318,7 +317,7 @@ $z-index:-1,0,1,2,3,4,5,6,7,8,9,10;
     // End loop list z-index
 // cursor
    // Start loop list cursor
-$cursor:not-allowed,zoom-in,pointer;
+$cursor:not-allowed,zoom-in,pointer,none,auto;
 @each $c in $cursor {
     %#{$c}{
         cursor: $c;
