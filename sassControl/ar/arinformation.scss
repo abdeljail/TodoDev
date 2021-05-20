@@ -1,0 +1,20 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+body{
+    direction: rtl;
+}
+.lang div:first-child span{
+    @extend %margin-right-10;
+}
+.info{
+    .content-info{
+       .input-change{
+                -o-transform:translate(-90%,-50%) !important;
+                -moz-transform:translate(-90%,-50%) !important;
+                -ms-transform:translate(-90%,-50%);
+                -webkit-transform:translate(-90%,-50%) !important;
+                transform:translate(-90%,-50%) !important;
+       }
+    }
+}

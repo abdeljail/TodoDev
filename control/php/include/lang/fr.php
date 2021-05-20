@@ -41,6 +41,11 @@
         // Start page new Users 
             "portfolio" => "Afficher dans le compte",
         // End page new Users
+        // Start page information
+            "ci" => "Changer l'image",
+            "im" => "importer une image",
+            "s" => "sauvegarder",
+        // End page new information
         // Start footer
             "en" => "Englais",
             "fr" => "France",

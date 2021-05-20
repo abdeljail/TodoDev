@@ -1,0 +1,236 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+button,input{
+    border: none;
+    outline: none;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+*{
+    @extend %margin-0;
+    @extend %padding-0;
+    @extend %box-sizing;
+}
+body{
+    @extend %background-color-dark_white;
+    @extend %font-size-16;
+    @extend %relative;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    @extend %display-block;
+    text-decoration: none;
+}
+.show-overly{
+    @extend %display-block;
+    @extend %z-index-10;
+}
+.overly{
+    @extend %width-100;
+    @extend %height-100;
+    @extend %background-color-black;
+    @extend %fixed;
+    @extend %top;
+    @extend %left;
+    @extend %z-index--1;
+    @extend %display-none;
+}
+.info{
+    .content-info{
+        @extend %display-flex;
+        @extend %flex-wrap-wrap;
+        min-height: 100vh;
+        .box-content{
+            @include flex-grow(1);
+            .old-imgs{
+                .content-imgs{
+                    @extend %padding-10-0;
+                    @extend %display-flex;
+                    @extend %justify-content-center;
+                    @extend %flex-wrap-wrap;
+                    >div{
+                        @include width(120);
+                        @include height(120);
+                        @extend %border-style-dashed;
+                        @extend %border-width-2;
+                        @extend %border-color-black;
+                        @extend %margin-10;
+                        @extend %pointer;
+                        @extend %border-radius-4;
+                        img{
+                            @extend %height-100;
+                            @extend %width-100;
+                            @extend %transition-timing-function-ease-in-out;
+                            @extend %transition-property-all;
+                            @extend %transition-duration-3;
+                        }
+                        &:hover img{
+                            @extend %border-radius-20;
+                            -o-transform: scale(1.2) rotate(5deg);
+                            -moz-transform: scale(1.2) rotate(5deg);
+                            -webkit-transform: scale(1.2) rotate(5deg);
+                            -ms-transform: scale(1.2) rotate(5deg);
+                            transform: scale(1.2) rotate(5deg);
+                        }
+                    }
+                }
+            }
+            .btn-change{
+                @extend %padding-15-0;
+                @extend %display-flex;
+                @extend %justify-content-center;
+                button{
+                    @extend %padding-8-14;
+                    @extend %pointer;
+                    @extend %capitalize;
+                    @extend %border-radius-4;
+                    @extend %transition-timing-function-ease-in-out;
+                    @extend %transition-property-all;
+                    @extend %transition-duration-3;
+                    @extend %box-shadow-dark_green;
+                    @extend %background-color-dark_green;
+                    @extend %color-white;
+                }
+            }
+            .show-input-change{
+                @extend %z-index-11;
+                @extend %opacity-1;
+                @extend %transition-duration-10;
+                @extend %transition-delay-5;
+                -o-transform:translate(-50%,-50%) !important;
+                -moz-transform:translate(-50%,-50%) !important;
+                -ms-transform:translate(-50%,-50%) !important;
+                -webkit-transform:translate(-50%,-50%) !important;
+                transform:translate(-50%,-50%) !important;
+            }
+            .input-change{
+                @extend %fixed;
+                @extend %z-index--1;
+                @include top(50%);
+                @include left(50%);
+                @extend %transition-timing-function-ease-in-out;
+                @extend %opacity-0;
+                transition-property: transform,z-index;
+                -o-transform:translate(-10%,-50%);
+                -moz-transform:translate(-10%,-50%);
+                -ms-transform:translate(-10%,-50%);
+                -webkit-transform:translate(-10%,-50%);
+                transform:translate(-10%,-50%);
+                .content-input{
+                    @include width(500);
+                    @include height(250);
+                    @extend %display-flex;
+                    @extend %flex-direction-column;
+                    @extend %border-style-solid;
+                    @extend %border-width-4;
+                    @extend %border-color-para;
+                    @extend %border-radius-6;
+                    @extend %background-color-dark_white;
+                    >div{
+                        @extend %padding-12-15;
+                        @extend %display-flex;
+                        @extend %align-items-center;
+                    }
+                    .header{
+                        @extend %background-color-dark_green;
+                        @extend %justify-content-space-between;
+                        h4{
+                            @extend %color-white;
+                            @extend %font-size-20;
+                        }
+                        span{
+                            @include width(30);
+                            @include height(30);
+                            @extend %display-flex;
+                            @extend %align-items-center;
+                            @extend %justify-content-center;
+                            @extend %border-style-solid;
+                            @extend %border-width-1;
+                            @extend %border-color-white;
+                            @extend %border-radius-4;
+                            @extend %background-color-yellow;
+                            @extend %color-dark_green;
+                            @extend %pointer;
+                            @extend %transition-timing-function-ease-in-out;
+                            @extend %transition-property-all;
+                            @extend %transition-duration-3;
+                            i{
+                                @extend %font-weight-500;
+                            }
+                            &:hover{
+                                transform: translateY(-5px) rotate(2deg);
+                            }
+                        }
+                    }
+                    .body{
+                        @extend %justify-content-space-between;
+                        @include flex-grow(1);
+                        .input{
+                            @include flex-grow(.7);
+                        }
+                        label{
+                            @extend %pointer;
+                            div{
+                                @extend %display-flex;
+                                @extend %padding-10-15;
+                                @extend %align-items-center;
+                                @extend %justify-content-space-between;
+                                @extend %border-style-solid;
+                                @extend %border-width-2;
+                                @extend %border-color-yellow;
+                                @extend %border-radius-4;
+                                background-color: #727C85;
+                                span:first-child{
+                                        @extend %color-dark_white;
+                                }
+                                span:last-child{
+                                    i{
+                                        @extend %color-yellow;
+                                        @extend %font-weight-500;
+                                        @extend %font-size-22;
+                                    }
+                                }
+                            }
+                        }
+                        input{
+                            @extend %display-none;
+                        }
+                        .show-img{
+                            @include width(100);
+                            @include height(100);
+                            @extend %border-style-solid;
+                            @extend %border-width-2;
+                            @extend %border-color-yellow;
+                            @extend %border-radius-4;
+                        }
+                    }
+                    .footer{
+                        @extend %border-style-top-solid;
+                        @extend %border-width-top-4;
+                        @extend %border-color-top-para;
+                        @extend %justify-content-flex-end;
+                        button{
+                            @extend %padding-8-20;
+                            @extend %background-color-blue_sky;
+                            @extend %color-white;
+                            @extend %font-size-16;
+                            @extend %pointer;
+                            @extend %border-radius-4;
+                            @extend %transition-timing-function-ease-in-out;
+                            @extend %transition-property-all;
+                            @extend %transition-duration-3;
+                            @extend %box-shadow-blue_sky;
+                            @extend %capitalize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "../include/mediaQuery/container";
+@import "../include/mediaQuery/information";

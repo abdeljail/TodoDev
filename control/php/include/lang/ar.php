@@ -28,20 +28,24 @@
             "link6" => "البريد الإلكتروني",
             "link7" => "إنشاء حساب",
         // Start page aside 
-        // Start page ranke Users
-            "ranke" => "عرض في ليبيا",
-        // End page ranke Users
-        // Start page new Users 
-            "portfolio" => "عرض في الحساب",
-        // End page new Users
         // Start Page dach
             "h31" => "المستخدمين رتبة",
             "h32" => "إنشاء حساب",
             "h33" => "ميسانجر",
             "h34" => "المعلومات كاملة",
             "show1" => "مشاهدة الكل",
-
         // End Page dach
+        // Start page ranke Users
+            "ranke" => "عرض في ليبيا",
+        // End page ranke Users
+        // Start page new Users 
+            "portfolio" => "عرض في الحساب",
+        // End page new Users
+        // Start page information
+            "ci" => "تغيير الصورة",
+            "im" => "استيراد الصورة",
+            "s" => "حفظ",
+        // End page new information
         // Start footer
             "en" => "الإنجليزية",
             "fr" => "فرنسا",

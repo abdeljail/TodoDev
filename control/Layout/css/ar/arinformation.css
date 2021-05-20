@@ -1,0 +1,14 @@
+.lang div:first-child span {
+  margin-right: 10px; }
+
+body {
+  direction: rtl; }
+
+.info .content-info .input-change {
+  -o-transform: translate(-90%, -50%) !important;
+  -moz-transform: translate(-90%, -50%) !important;
+  -ms-transform: translate(-90%, -50%);
+  -webkit-transform: translate(-90%, -50%) !important;
+  transform: translate(-90%, -50%) !important; }
+
+/*# sourceMappingURL=arinformation.css.map */

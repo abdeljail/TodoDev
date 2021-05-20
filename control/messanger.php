@@ -29,10 +29,10 @@ require_once getPathFile('include/template/header.php');?>
         <?php
             require_once getPathFile('include/template/aside.php');
         ?>
-        <div class="box-content">
-            <div class="all-users">
-                <div class="content-all">
-                <ul>
+         <div class="box-content">
+             <div class="all-users">
+               <div class="content-all">
+                  <ul>
                     <li>
                         <div class="user">
                             <img src="http://localhost/tododev/control/Layout/image/user.jfif" alt="">
@@ -190,8 +190,7 @@ require_once getPathFile('include/template/header.php');?>
                                         <div class="c-m">
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, amet consequatur soluta possimus suscipit explicabo odio ratione mollitia voluptatum nostrum, error dicta reiciendis placeat rem officiis enim odit deserunt hic
                                         </div>
-                                    </div>
-                                    
+                                    </div>   
                             </div>
                             <div class="footer">
                                 <div>
@@ -204,12 +203,6 @@ require_once getPathFile('include/template/header.php');?>
                     </div>
             </div>
         </div>
-
-
-
-
-
-
    </div>
 </section>
 <?php 

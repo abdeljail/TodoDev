@@ -42,6 +42,11 @@
         // Start page new Users 
             "portfolio" => "View in Potfolyo",
         // End page new Users
+        // Start page information
+            "ci" => "Change Image",
+            "im" => "import image",
+            "s" => "save",
+        // End page new information
         // Start footer
             "en" => "English",
             "fr" => "France",

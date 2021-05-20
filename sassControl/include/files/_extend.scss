@@ -249,7 +249,7 @@ $size_border-radius: 0,2,4,5,6,8,10,12,14,15,16,20;
 }
 $transition-property:box-shadow,all,transform,overflow;
 $transition-timing-function:ease,ease-in,ease-out,ease-in-out,linear;
-$transition-duration: 1,2,3,4,5,6,7,8,9,10;
+$transition-duration: 1,2,3,4,5,6,7,8,9,10,20,30;
 $transition-delay:1,2,3,4,5,6,7,8,9,10;
 @each $tp in $transition-property {
     @include transition-property_prefix(transition-property, $tp);
@@ -303,7 +303,7 @@ $position:relative,absolute,fixed;
 // End top right botttom left
 // z-index
     // Start loop list z-index
-$z-index:-1,0,1,2,3,4,5,6,7,8,9,10;
+$z-index:-1,0,1,2,3,4,5,6,7,8,9,10,11;
 @each $zi in $z-index {
     %z-index-#{$zi}{
         z-index: $zi;

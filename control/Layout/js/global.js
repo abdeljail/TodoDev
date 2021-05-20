@@ -8,6 +8,10 @@ let toggleClass = (element, NameClass) => element.classList.toggle(NameClass);
 let removeClass = (element, NameClass) => element.classList.remove(NameClass);
 // function  add Event toggle Class
 let addEventClass = (element, el, nameClass) => element.addEventListener("click", _ => toggleClass(el, nameClass));
+// function  add Event toggle Class Remove
+let addEventClassRemove = (element, el, nameClass) => element.addEventListener("click", _ => removeClass(el, nameClass));
+// function  add Event toggle Class Add
+let addEventClassAdd = (element, el, nameClass) => element.addEventListener("click", _ => addClass(el, nameClass));
 // function  Element => add class
 let addClass = (element, NameClass) => element.classList.add(NameClass);
 // function check url of page
