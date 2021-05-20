@@ -1,0 +1,27 @@
+section.login{
+    @include md-575{ 
+        .container{
+            .content-login{  
+                .form{
+                    .body-form{
+                        padding: 20px 12px;
+                        margin: auto;
+                        width: 310px !important;
+                    }
+                    .content-body-form{
+                        padding: 0;
+                        width: 280px !important;
+                        input{
+                            width: 280px !important;
+                        }
+                    }
+                    .footer-form{
+                        >div,button{
+                            width: 280px !important;
+                        }
+                    }
+                }  
+            }
+        }
+    }
+}

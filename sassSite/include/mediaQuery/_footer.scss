@@ -1,0 +1,9 @@
+footer{
+    @include md-575{ 
+        .container{
+            .content-footer{
+                height: 70px !important;
+            }
+        }
+    }
+}
