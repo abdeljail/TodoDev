@@ -1,0 +1,24 @@
+body{
+    overflow-x: hidden;
+}
+.body{
+    @include md-575{
+        .content-form{
+            >div{
+                width: 240px !important;
+            }
+        }
+    }
+}
+.sing-up{
+    padding: 0;
+    @include md-575{
+        .body{
+            .content-form{
+                >div{
+                    width: 240px !important;
+                }
+            }
+        }
+    }
+}

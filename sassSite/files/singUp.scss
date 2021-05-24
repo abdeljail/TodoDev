@@ -1,0 +1,235 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+button,input{
+    border: none;
+    outline: none;
+}
+*{
+    @extend %margin-0;
+    @extend %padding-0;
+    @extend %box-sizing;
+}
+body{
+    @extend %background-color-dark_green;
+    @extend %font-size-16;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sing-up{
+    @include prefix(background-image,url("http://localhost/tododev/site/Layout/image/bd.png"));
+    @extend %padding-20-20;
+    .container{
+        >.btn{
+            button{
+                @extend %margin-top-20;
+                @extend %pointer;
+                @extend %padding-10-15;
+                @extend %border-radius-6;
+                @extend %border-style-bottom-solid;
+                @extend %border-width-bottom-4;
+                @extend %border-color-bottom-black;
+                @extend %font-size-15;
+                @extend %transition-timing-function-ease-in-out;
+                @extend %transition-property-all;
+                @extend %transition-duration-3;
+                &:hover{
+                    @extend %border-color-bottom-yellow;
+                    @extend %background-color-white_F9;
+                }
+            }
+        }
+        >.content{
+            @extend %display-flex;
+            @extend %justify-content-center;
+            @extend %align-items-center;
+            @extend %relative;
+            height: 100vh;
+            .err{
+                @include min-width(1);
+                @extend %absolute;
+                @extend %top;
+                @extend %right;
+                @extend %padding-20;
+                @extend %display-flex;
+                @extend %flex-direction-column;
+                @extend %align-items-start;
+                @extend %justify-content-center;
+                @extend %z-index-10;
+                height: 80%;
+                div{
+                    @include min-width(1);
+                    @extend %padding-10-15;
+                    @extend %border-radius-4;
+                    @extend %background-color-danger;
+                    @extend %border-style-solid;
+                    @extend %border-width-1;
+                    @extend %border-color-danger_0;
+                    @extend %color-black;
+                    @extend %pointer;
+                    @extend %margin-top-10;
+                    margin-right: 50px;
+                    i{
+                        @extend %font-weight-500;
+                        @extend %color-danger_0;
+                        @extend %margin-left-20;
+                    }
+                }
+            }
+            .animate-t{
+                @extend %opacity-0;
+                @extend %z-index--1;
+                @include prefix(transform,translateX(8vw));
+            }
+            .form{
+                @extend %background-color-dark_white;
+                @extend %border-radius-8;
+                @extend %overflow-hidden;
+                @extend %transition-timing-function-ease-in-out;
+                @extend %transition-property-all;
+                @extend %transition-duration-10;
+                @extend %relative;
+                margin-top: -120px;
+                >div{
+                    @extend %padding-10-20;
+                }
+                .header{
+                    @extend %background-color-black;
+                    @extend %display-flex;
+                    @extend %justify-content-space-between;
+                    @extend %align-items-center;
+                    .h1{
+                        @extend %font-size-19;
+                    }
+                    h1{
+                        @extend %capitalize;
+                        @extend %font-size-32;
+                        @extend %font-weight-500;
+                        @extend %color-dark_white;
+                    }
+                    span{
+                        @extend %color-dark_green;
+                        @extend %pointer;
+                        @extend %padding-4-8;
+                    }
+                }
+                .body{
+                    .content-form{
+                        >div {
+                            @include width(300);
+                            @extend %margin-15-0;
+                            *{
+                            }
+                            label{
+                                @extend %color-para;
+                                @extend %capitalize;
+                                @extend %margin-left-4;
+                                @extend %font-size-15;
+                                @extend %pointer;
+                            }
+                            input{
+                                @extend %display-block;
+                                @extend %margin-10-0;
+                                @extend %padding-10-15;
+                                @extend %width-100;
+                                @extend %border-radius-2;
+                                @extend %border-style-solid;
+                                @extend %border-width-1;
+                                @extend %border-color-gray-500;
+                                &:focus{
+                                    @extend %border-color-black;
+                                }
+                            }
+                        }
+                        .password{
+                            ::-webkit-input-placeholder { 
+                                color: #73ADDF;
+                                font-size: 12px;
+                                text-transform: capitalize;
+                            }
+
+                            :-ms-input-placeholder { 
+                                color: #73ADDF;
+                                font-size: 12px;
+                                text-transform: capitalize;
+                            }
+                            ::placeholder{
+                                font-size: 12px;
+                                text-transform: capitalize;
+                                color: #73ADDF;
+                            }
+                            input focus::-webkit-input-placeholder{
+                                -o-transition: .3s linear;
+                                -moz-transition: .3s linear;
+                                -ms-transition: .3s linear;
+                                -webkit-transition: .3s linear;
+                                transition: .3s linear;
+                                opacity: 0;
+                            }
+                            input focus::-moz-placeholder{
+                                -o-transition: .3s linear;
+                                -moz-transition: .3s linear;
+                                -ms-transition: .3s linear;
+                                -webkit-transition: .3s linear;
+                                transition: .3s linear;
+                                opacity: 0;
+                            }
+                            input focus:-ms-input-placeholder{
+                                -o-transition: .3s linear;
+                                -moz-transition: .3s linear;
+                                -ms-transition: .3s linear;
+                                -webkit-transition: .3s linear;
+                                transition: .3s linear;
+                                opacity: 0;
+                            }
+                            input focus::-ms-input-placeholder{
+                                -o-transition: .3s linear;
+                                -moz-transition: .3s linear;
+                                -ms-transition: .3s linear;
+                                -webkit-transition: .3s linear;
+                                transition: .3s linear;
+                                  opacity: 0;
+                            }
+                            input:focus::placeholder{
+                                -o-transition: .3s linear;
+                                -moz-transition: .3s linear;
+                                -ms-transition: .3s linear;
+                                -webkit-transition: .3s linear;
+                                transition: .3s linear;
+                                opacity: 0;
+                            }
+                        }
+                        div:last-child{
+                            @extend %padding-top-12;
+                            @extend %width-100;
+                            @extend %border-radius-2;
+                            @extend %border-style-top-solid;
+                            @extend %border-width-top-2;
+                            @extend %border-color-top-gray-500;
+                            button{
+                                @extend %transition-timing-function-ease-in-out;
+                                @extend %transition-property-all;
+                                @extend %transition-duration-3;
+                                @extend %border-radius-4;
+                                @extend %padding-10-15;
+                                @extend %width-100;
+                                @extend %background-color-green;
+                                @extend %box-shadow-green;
+                                @extend %capitalize;
+                                @extend %color-dark_white;
+                                @extend %pointer;
+                                @extend %font-size-16;
+                                @extend %border-style-solid;
+                                @extend %border-width-2;
+                                @extend %border-color-dark_green;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@import "../include/mediaQuery/singUp";

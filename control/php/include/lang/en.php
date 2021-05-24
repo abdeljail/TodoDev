@@ -47,15 +47,15 @@
             "im" => "import image",
             "s" => "save",
         // End page new information
-        // Start footer
+        // Start footer and footer1
             "en" => "English",
             "fr" => "France",
             "ar" => "Arabic",
-        // Start footer
+        // End footer and footer1
         // Start footer1
             "copy" => "copy 2021 todo list",
             "by" => "By Abdeljalil Khalal",
-        // Start footer1
+        // End footer1
         );
         return $lang[$e];
     };

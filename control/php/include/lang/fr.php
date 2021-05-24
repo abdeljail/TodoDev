@@ -46,12 +46,12 @@
             "im" => "importer une image",
             "s" => "sauvegarder",
         // End page new information
-        // Start footer
+        // Start footer and footer1
             "en" => "Englais",
             "fr" => "France",
             "ar" => "arabe",
         // Start footer
-        // Start footer1
+        // Start footer1 and footer1
             "copy" => "copier la liste de tâches 2021",
             "by" => "Par Abdeljalil Khalal",
         // Start footer1

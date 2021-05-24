@@ -1,0 +1,56 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+.form{
+    .app-o{
+        @extend %opacity-0;
+        @extend %z-index--1;
+    }
+    .lod{
+        @extend %absolute;
+        @extend %height-100;
+        @extend %width-100;
+        @extend %display-flex;
+        @extend %justify-content-center;
+        @extend %align-items-center;
+        background-color: #020313a4;
+        span.app-load{
+            @include width(50);
+            @include height(50);
+            @extend %display-block;
+            @extend %border-style-solid;
+            @extend %border-width-5;
+            @extend %border-color-white;
+            -webkit-animation: spinner 1s linear infinite;
+            -moz-animation: spinner 1s linear infinite;
+            @include prefix(animation,spinner 1s linear infinite);
+            animation: spinner 1s linear infinite;
+            border-top-color: #020313;
+            border-radius:50%;
+        }
+        @-webkit-keyframes spinner {
+            from {
+                @include prefix(transform,rotate(0deg));
+            }
+            to {
+                @include prefix(transform,rotate(360deg));
+            }
+        }
+        @-moz-keyframes spinner {
+            from {
+                @include prefix(transform,rotate(0deg));
+            }
+            to {
+                @include prefix(transform,rotate(360deg));
+            }
+        }
+        @keyframes spinner {
+           from {
+                @include prefix(transform,rotate(0deg));
+            }
+            to {
+                @include prefix(transform,rotate(360deg));
+            }
+        }
+    }
+}

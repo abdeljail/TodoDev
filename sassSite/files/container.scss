@@ -1,0 +1,8 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+@import "../include/mediaQuery/container";

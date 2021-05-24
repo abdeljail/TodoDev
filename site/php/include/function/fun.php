@@ -10,12 +10,10 @@ function getTitlePage(){
 function links($css,$v){  
     echo "<link rel='stylesheet' href='". $css ."Layout/css/". $v .".css'>"; 
 };
-
 /// create function get link js
 function script($js,$v,$type=""){
     echo "<script src='". $js ."Layout/js/". $v .".js' $type></script>"; 
 };
-
 /// create function get include file
 function getPathFile($path){
     return "php/". $path;

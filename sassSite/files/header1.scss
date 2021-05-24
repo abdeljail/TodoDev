@@ -1,0 +1,81 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+
+header{
+    @include height(75);
+    @extend %relative;
+    nav{
+        @extend %fixed;
+        @extend %background-color-dark_green;
+        @extend %width-100;
+        @extend %z-index-11;
+        .container{
+            .content-nav{
+                @include height(75);
+                @extend %display-flex;
+                @extend %justify-content-space-between;
+                @extend %align-items-center;
+                .logo{
+                    @include min-height(65);
+                    a{
+                        @extend %display-block;
+                        .box-img{
+                            @extend %relative;
+                            img{
+                                @extend %absolute;
+                                @extend %transition-timing-function-ease-in-out;
+                                @extend %transition-property-all;
+                                @extend %transition-duration-3;
+                            }
+                            img:nth-child(2){
+                                @include left(11px);
+                                @include top(6px);
+                            }
+                            img:nth-child(3){
+                                @include left(19px);
+                                @include top(29px);
+                            }
+                            &:hover{
+                                img:nth-child(2){
+                                    @include top(4px);
+                                }
+                                img:nth-child(3){
+                                    @include top(31px);
+                                }
+                            }
+                        }
+                    }
+                }
+                .i-u{
+                    button{
+                        @extend %padding-10-16;
+                        @extend %margin-0-10;
+                        @extend %border-radius-4;
+                        @extend %font-size-15;
+                        @extend %pointer;
+                        @extend %capitalize;
+                        @extend %transition-property-all;
+                        @extend %transition-timing-function-ease-in-out;
+                        @extend %transition-duration-1;
+                    }
+                    button:first-child{
+                        @extend %color-yellow;
+                        @extend %border-style-solid;
+                        @extend %border-width-1;
+                        @extend %border-color-yellow;
+                        background-color: transparent;
+                        &:hover{
+                            background-color: #fc8f0031;
+                        }
+                    }
+                    button:last-child{
+                        @extend %background-color-yellow;
+                        @extend %color-white;
+                        @extend %box-shadow-yellow;
+                    }
+                }
+            }
+        }
+    }
+}

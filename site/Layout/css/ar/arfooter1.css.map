@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAS4B,kFAAO;ECkF/B,KAAK,EAAC,MAAM;EDhFgB,IAAI,EAAE,OAAO",
+"sources": ["../../../../sassSite/ar/arfooter1.scss","../../../../sassSite/include/files/_mixin.scss"],
+"names": [],
+"file": "arfooter1.css"
+}

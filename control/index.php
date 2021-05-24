@@ -12,7 +12,7 @@ if(!empty($_SESSION["name"]) && !empty($_SESSION["email"]) && !empty($_SESSION["
 require_once "php/include/init.php";
 $l = "en.php";
 $nameLang = "English";
-if(isset($_GET["lang"])){
+if(isset($_GET["lang"]) && !empty($_GET["lang"])){
     $l = strtolower($_GET["lang"][0].$_GET["lang"][1]) . ".php";
     $nameLang = $_GET["lang"];
 }
@@ -30,7 +30,6 @@ if($nameLang == "arabe"){
 getTitlePage();
 #include file body.php
 require_once getPathFile('include/template/body.php');?>
-
 <section class="login">
     <div class="container">
         <div class="content-login">

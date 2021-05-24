@@ -1,0 +1,189 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+footer{
+    @extend %background-color-white;
+        .content-footer{
+            @include height(200);
+            @extend %flex-direction-column;
+            @extend %display-flex;
+            @extend %justify-content-space-between;
+            .top-footer{
+                @include height(10);
+                @include flex-grow(1);
+                .container{
+                    @extend %height-100;
+                    .content-top{
+                        @extend %height-100;
+                        @extend %padding-20;
+                        @extend %display-flex;
+                        @extend %justify-content-flex-end;
+                        @extend %align-items-center;
+                        .lang{
+                            @extend %relative;
+                            div:first-of-type{
+                                @include width(120);
+                                @extend %pointer;
+                                @extend %padding-10;
+                                @extend %background-color-black;
+                                @extend %border-radius-4;
+                                @extend %border-width-2;
+                                @extend %border-style-solid;
+                                @extend %border-color-dark_white;
+                                @extend %color-dark_white;
+                                @extend %box-shadow-black;
+                                @extend %transition-timing-function-ease-in-out;
+                                @extend %transition-property-all;
+                                @extend %transition-duration-3;
+                                @extend %display-flex;
+                                @extend %justify-content-center;
+                                @extend %align-items-center;
+                                i{
+                                    @extend %font-size-18;
+                                }
+                                span{
+                                    @extend %margin-left-10;
+                                    @extend %capitalize;
+                                    @include width(70);
+                                }
+                            }
+                            div:last-of-type{
+                                @include top(calc(-40px + (-3 * 36px)));
+                                @extend %absolute;
+                                @extend %padding-20;
+                                @extend %border-radius-4;
+                                @extend %display-flex;
+                                @extend %background-color-dark_white;
+                                @extend %flex-direction-column;
+                                @extend %opacity-0;
+                                @extend %z-index--1;
+                                @extend %transition-timing-function-ease-in-out;
+                                @extend %transition-property-all;
+                                @extend %transition-duration-1;
+                                span{
+                                    @extend %padding-6-20;
+                                    @extend %display-block;
+                                    @extend %pointer;
+                                    @extend %margin-2-0;
+                                    @extend %border-radius-4;
+                                    @extend %transition-timing-function-ease-in-out;
+                                    @extend %transition-property-all;
+                                    @extend %transition-duration-3;
+                                    @extend %color-black;
+                                    @extend %capitalize;
+                                    @extend %center;
+                                    &:hover{
+                                        @extend %background-color-black;
+                                        @extend %color-dark_white;
+                                    }
+                                }
+                                &::after{
+                                    @include width(20);
+                                    @include height(20);
+                                    @include prefix(transform,rotate(45deg));
+                                    @include left(calc(50% - 10px));
+                                    @include bottom(-10px);
+                                    @extend %content;
+                                    @extend %absolute;
+                                    @extend %background-color-dark_white;
+                                    @extend %border-radius-2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .bottom-footer{
+                @extend %border-width-top-1;
+                @extend %border-style-top-solid;
+                @extend %border-color-top-gray-500;
+                .content-bottom{
+                @extend %padding-20;
+                    .copy{
+                        @extend %display-flex;
+                        @extend %justify-content-space-between;
+                        @extend %align-items-center;
+                        @extend %flex-wrap-wrap;
+                        >div{
+                            p{
+                                @extend %color-para;
+                                @extend %capitalize;
+                                @extend %font-size-15;
+                                @extend %font-weight-400;
+                            }
+                        }
+                        div:last-child{
+                            @extend %relative;
+                            p{
+                                @extend %padding-10-15;
+                                @extend %border-radius-4;
+                                background-color: #00968859;
+                                &:hover{
+                                    @extend %background-color-dark_green;
+                                    @extend %color-white;
+                                }
+                            }
+                            .box-so{
+                                @include left(-180px);
+                                @extend %absolute;
+                                @extend %border-radius-4;
+                                @extend %padding-10-15;
+                                @extend %background-color-dark_white;
+                                @extend %top;
+                                @extend %overflow-hidden;
+                                @extend %opacity-0;
+                                @extend %z-index--1;
+                                span{
+                                    @extend %margin-0-5;
+                                    @extend %font-size-18;
+                                    @extend %transition-timing-function-ease-in-out;
+                                    @extend %transition-property-transform;
+                                    @extend %transition-duration-3;
+                                    @extend %pointer;
+                                    transform: translateY(40px);    
+                                    @extend %display-inline-block;
+                                }
+                                span:first-child{
+                                    @extend %transition-delay-1;
+                                    color: #0C88EF;
+                                }
+                                span:nth-child(2){
+                                    @extend %transition-delay-2;
+                                    color: #1A91DA;
+                                }
+                                span:nth-child(3){
+                                    @extend %transition-delay-3;
+                                    color: #272727;
+                                }
+                                span:last-child{
+                                    @extend %transition-delay-4;
+                                    color: #C3315D;
+                                }
+                            }
+                            p:hover ~ .box-so{
+                                @extend %opacity-1;
+                                @extend %z-index-0;
+                                span{
+                                    transform: translateY(0px) rotate(10deg) scale(1.2);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+.select-show{
+    @extend %opacity-important-1;
+    @extend %z-index-important-10;
+}
+@include md-350{
+    .copy{
+        >div{
+            text-align: center;
+            padding: 4px 0;
+            margin: 0 auto;
+        }
+    }
+}
+@import "../include/mediaQuery/footer";

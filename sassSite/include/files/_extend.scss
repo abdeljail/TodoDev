@@ -111,7 +111,7 @@ $font-weight:100,200,300,400,500,600,700,800,900,blod;
   // End loop list font-weoght
 // font-zise
    // Start loop list font-size
-$font-size:8,10,12,14,15,16,17,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48;
+$font-size:8,10,12,14,15,16,17,18,19,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48;
 @each $fs in $font-size {
     %font-size-#{$fs}{
         font-size: #{$fs}px;
@@ -327,7 +327,7 @@ $cursor:not-allowed,zoom-in,pointer,none,auto;
 // flexbox parent 
     // Start loop list flexbox
 $justify-content:center,start,end, flex-start,flex-end,left,right,space-between,space-evenly,stretch,space-around;
-$align-items:flex-start,center,start, end,flex-end;
+$align-items:flex-start,center,start, end,flex-end,baseline;
 $align-content:flex-start,center,stretch, space-between,flex-end,space-around;
 @each $js in $justify-content {
     %justify-content-#{$js}{
