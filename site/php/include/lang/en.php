@@ -12,6 +12,11 @@
                 "fpassword" => "Verify Password",
                 "create" => "create account",
              // End page sing Up
+            // Start page not found
+                "fh1" => "Trouble logging in ?",
+                "fp" => "is not associated with any You todolist account.",
+                "fbtn" => "Try Again",
+            // End page not found
             // Start footer and footer1
                 "en" => "English",
                 "fr" => "France",

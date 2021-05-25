@@ -12,12 +12,8 @@
                     </a>
                 </div>
                 <div class="i-u">
-                    <button>
-                        sing in
-                    </button>
-                    <button>
-                        sing up
-                    </button>
+                    <a href="http://localhost/tododev/site/singIn.php" accesskey="i"> sing in </a>
+                    <a href="http://localhost/tododev/site/singUp.php" accesskey="u"> sing up </a>
                 </div>
             </div>
         </div>

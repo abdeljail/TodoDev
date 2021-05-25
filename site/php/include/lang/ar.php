@@ -21,6 +21,11 @@
                 "copy" => "نسخ 2021 قائمة المهام",
                 "by" => "بقلم عبد الجليل خليل",
             // Start footer1
+            // Start page not found
+                "fh1" => "مشكلة في تسجيل الدخول؟",
+                "fp" => " todolist غير مرتبط بأي حساب .",
+                "fbtn" => "حاول مرة أخري",
+            // End page not found 
         );
         return $lang[$e];
     };

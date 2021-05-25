@@ -117,15 +117,14 @@ body{
                     .content-form{
                         >div {
                             @include width(300);
-                            @extend %margin-15-0;
-                            *{
-                            }
+                            @extend %margin-10-0;
                             label{
                                 @extend %color-para;
                                 @extend %capitalize;
                                 @extend %margin-left-4;
                                 @extend %font-size-15;
                                 @extend %pointer;
+                                @extend %margin-bottom-2;
                             }
                             input{
                                 @extend %display-block;
@@ -200,12 +199,13 @@ body{
                             }
                         }
                         div:last-child{
-                            @extend %padding-top-12;
+                            @extend %padding-top-20;
                             @extend %width-100;
                             @extend %border-radius-2;
                             @extend %border-style-top-solid;
                             @extend %border-width-top-2;
                             @extend %border-color-top-gray-500;
+                            @extend %margin-bottom-0;
                             button{
                                 @extend %transition-timing-function-ease-in-out;
                                 @extend %transition-property-all;

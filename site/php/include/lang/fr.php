@@ -12,6 +12,11 @@
                 "fpassword" => "vérifier le mot de passe",
                 "create" => "create account",
              // End page sing Up
+            // Start page not found
+                "fh1" => "Problème de connexion?",
+                "fp" => "n'est associé à aucun compte Vous todolist.",
+                "fbtn" => "Réessayer",
+            // End page not found
             // Start footer and footer1
                 "en" => "Englais",
                 "fr" => "France",

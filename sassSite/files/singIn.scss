@@ -140,7 +140,8 @@ body{
                             }
                         }
                         div:last-child{
-                            @extend %padding-top-12;
+                            @extend %padding-top-20;
+                            @extend %margin-bottom-0;
                             @extend %width-100;
                             @extend %border-radius-2;
                             @extend %border-style-top-solid;
@@ -172,4 +173,4 @@ body{
 }
 
 
-// @import "../include/mediaQuery/singUp";
+@import "../include/mediaQuery/singUp";

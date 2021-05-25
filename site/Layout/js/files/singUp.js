@@ -1,12 +1,14 @@
-let showForm        = document.querySelector(".sing-up .container .form");
-let email           = document.querySelector(".sing-up .container .form .email input");
+let showForm        = document.querySelector(".container .form");
+let spanUrl         = document.querySelector(".container .header span");
+let email           = document.querySelector(".container .form .email input");
 let phone           = document.querySelector(".sing-up .container .form .phone input");
-let password        = document.querySelector(".sing-up .container .form .password input");
+let password        = document.querySelector(".container .form .password input");
 let full_name       = document.querySelector(".sing-up .container .form .full-name input");
 let f_password      = document.querySelector(".sing-up .container .form .f-password input");
 let btn_send        = document.querySelector(".sing-up .container .form .btn button");
-let errBox          = document.querySelector(".sing-up .container .err");
-let lodding          = document.querySelector(".sing-up .container .form .lod");
+let errBox          = document.querySelector(".container .err");
+let lodding         = document.querySelector(".container .form .lod");
+let btn_back        = document.querySelector(".container .btn button");
 let iconClose       = `<i class="fas fa-times"></i>`;
 let err             = [];
 let sec             = [];
@@ -64,37 +66,51 @@ let checkFpassword = _ => {
     outErr(printErrFpassword);
     err.push("fpassword");
 }
-btn_send.addEventListener("click", _ => {
-    errBox.innerHTML = null;
-    checkFull_name();
-    checkEmail();
-    checkPhone();
-    checkPassword();
-    checkFpassword();
-    if (err.length != 0) { err = [];removeErr();return;}
-    removeClass(lodding,"app-o");
-    fetch("http://localhost/tododev/site/php/createAccount.php",
-        { method: "POST", body: loopData(sec) })
-    .then(res => res.json())
-    .then(res => {
-        console.log(res.message);
-        addClass(lodding, "app-o");
-        if (res.message == "Found"){
-            alert("your acount in create");
-            return;
-        }
-        if (res.message == "add") {
-            window.Location.href = "http://localhost/tododev/site/to-do-today.php";
-            return;
-        }
-        if (res.message == "Error Server") {
-            alert("your acount in create");
-            return;
-        }
-
+// add event click " add url  " for button btn_back
+addUrl(btn_back,"http://localhost/tododev/site/");
+addUrl(spanUrl, "http://localhost/tododev/site/singIn.php");
+if(document.URL.search("singUp.php") != -1){
+    btn_send.addEventListener("click", _ => {
+        errBox.innerHTML = null;
+        checkFull_name();
+        checkEmail();
+        checkPhone();
+        checkPassword();
+        checkFpassword();
+        if (err.length != 0) { err = []; removeErr(); return; }
+        removeClass(lodding, "app-o");
+        fetch("http://localhost/tododev/site/php/createAccount.php",
+            { method: "POST", body: loopData(sec) })
+            .then(res => res.json())
+            .then(res => {
+                addClass(lodding, "app-o");
+                if (res.message == "Found") {
+                    alert("your acount in create");
+                    return;
+                }
+                if (res.message == "add") {
+                    window.Location.href = "http://localhost/tododev/site/singIn.php";
+                    return;
+                }
+                if (res.message == "Error Server") {
+                    alert("your acount in create");
+                    return;
+                }
+            });
+        sec = [];
     });
-    sec =[];
-});
-(_=>{
-    removeClass(showForm,"animate-t");
+}
+export {
+    printErrEmail,
+    printErrPassword,
+    printErrPhone,
+    outErr,
+    removeErr,
+    errBox,
+    lodding,
+    btn_back,
+    spanUrl
+}
+(_ => {
+    removeClass(showForm, "animate-t");
 })();

@@ -1,37 +1,333 @@
-/*
-Sass::SyntaxError: ".sing-up .container > .btn button" failed to @extend "%border-color-bottom-ge".
-The selector "%border-color-bottom-ge" was not found.
-Use "@extend %border-color-bottom-ge !optional" if the extend should be able to fail.
+.sing-up .container > .content .err div {
+  color: #020313; }
 
+.sing-up .container > .content .form .header span {
+  color: #026057; }
 
-Backtrace:
-./files/singUp.scss:31
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/extend.rb:56:in `block in check_extends_fired!'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/util/subset_map.rb:105:in `block in each_value'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/util/subset_map.rb:105:in `each'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/util/subset_map.rb:105:in `each_value'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/extend.rb:51:in `check_extends_fired!'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/visitors/extend.rb:16:in `visit'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:39:in `css_tree'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Sass::SyntaxError: \".sing-up .container > .btn button\" failed to @extend \"%border-color-bottom-ge\".\A The selector \"%border-color-bottom-ge\" was not found.\A Use \"@extend %border-color-bottom-ge !optional\" if the extend should be able to fail.\A "; }
+.sing-up .container > .content .form .header h1, .sing-up .container > .content .form .body .content-form div:last-child button {
+  color: #F0F2F4; }
+
+.sing-up .container > .content .form .body .content-form > div label {
+  color: #546274; }
+
+.sing-up .container > .content .err div i {
+  color: #F15555; }
+
+.sing-up .container > .content .form .header {
+  background-color: #020313; }
+
+.sing-up .container > .content .form .body .content-form div:last-child button {
+  background-color: #009688; }
+
+body {
+  background-color: #026057; }
+
+.sing-up .container > .btn button:hover {
+  background-color: #F9F9F9; }
+
+.sing-up .container > .content .form {
+  background-color: #F0F2F4; }
+
+.sing-up .container > .content .err div {
+  background-color: #f3cbcb; }
+
+.sing-up .container > .content .form .header span {
+  padding: 4px 8px; }
+
+.sing-up .container > .btn button, .sing-up .container > .content .err div, .sing-up .container > .content .form .body .content-form > div input, .sing-up .container > .content .form .body .content-form div:last-child button {
+  padding: 10px 15px; }
+
+.sing-up .container > .content .form > div {
+  padding: 10px 20px; }
+
+.sing-up {
+  padding: 20px 20px; }
+
+* {
+  padding: 0px; }
+
+.sing-up .container > .content .err {
+  padding: 20px; }
+
+.sing-up .container > .content .form .body .content-form div:last-child {
+  padding-top: 20px; }
+
+* {
+  margin: 0px; }
+
+.sing-up .container > .content .form .body .content-form > div, .sing-up .container > .content .form .body .content-form > div input {
+  margin: 10px 0; }
+
+.sing-up .container > .content .form .body .content-form div:last-child {
+  margin-bottom: 0px; }
+
+.sing-up .container > .content .form .body .content-form > div label {
+  margin-bottom: 2px; }
+
+.sing-up .container > .content .form .body .content-form > div label {
+  margin-left: 4px; }
+
+.sing-up .container > .content .err div {
+  margin-top: 10px; }
+
+.sing-up .container > .btn button {
+  margin-top: 20px; }
+
+.sing-up .container > .content .err div i {
+  margin-left: 20px; }
+
+.sing-up .container > .content .err div i, .sing-up .container > .content .form .header h1 {
+  font-weight: 500; }
+
+.sing-up .container > .btn button, .sing-up .container > .content .form .body .content-form > div label {
+  font-size: 15px; }
+
+body, .sing-up .container > .content .form .body .content-form div:last-child button {
+  font-size: 16px; }
+
+.sing-up .container > .content .form .header .h1 {
+  font-size: 19px; }
+
+.sing-up .container > .content .form .header h1 {
+  font-size: 32px; }
+
+.sing-up .container > .content .err {
+  text-align: right; }
+
+.sing-up .container > .content .form .header h1, .sing-up .container > .content .form .body .content-form > div label, .sing-up .container > .content .form .body .content-form div:last-child button {
+  text-transform: capitalize; }
+
+.sing-up .container > .content .form .body .content-form > div input {
+  display: block; }
+
+.sing-up .container > .content, .sing-up .container > .content .err, .sing-up .container > .content .form .header {
+  display: flex; }
+
+.sing-up .container > .content .err div, .sing-up .container > .content .form .body .content-form > div input {
+  border-width: 1px; }
+
+.sing-up .container > .content .form .body .content-form div:last-child button {
+  border-width: 2px; }
+
+.sing-up .container > .content .form .body .content-form div:last-child {
+  border-top-width: 2px; }
+
+.sing-up .container > .btn button {
+  border-bottom-width: 4px; }
+
+.sing-up .container > .content .err div, .sing-up .container > .content .form .body .content-form > div input, .sing-up .container > .content .form .body .content-form div:last-child button {
+  border-style: solid; }
+
+.sing-up .container > .content .form .body .content-form div:last-child {
+  border-top-style: solid; }
+
+.sing-up .container > .btn button {
+  border-bottom-style: solid; }
+
+.sing-up .container > .content .form .body .content-form > div input:focus {
+  border-color: #020313; }
+
+.sing-up .container > .btn button {
+  border-bottom-color: #020313; }
+
+.sing-up .container > .content .form .body .content-form div:last-child button {
+  border-color: #026057; }
+
+.sing-up .container > .content .form .body .content-form > div input {
+  border-color: #ccc; }
+
+.sing-up .container > .content .form .body .content-form div:last-child {
+  border-top-color: #ccc; }
+
+.sing-up .container > .btn button:hover {
+  border-bottom-color: #F69A0F; }
+
+.sing-up .container > .content .err div {
+  border-color: #F15555; }
+
+.sing-up .container > .content .form .body .content-form > div input, .sing-up .container > .content .form .body .content-form div:last-child {
+  border-radius: 2px; }
+
+.sing-up .container > .content .err div, .sing-up .container > .content .form .body .content-form div:last-child button {
+  border-radius: 4px; }
+
+.sing-up .container > .btn button {
+  border-radius: 6px; }
+
+.sing-up .container > .content .form {
+  border-radius: 8px; }
+
+.sing-up .container > .content .form .body .content-form div:last-child button:hover {
+  -webkit-box-shadow: 0px 0px 14px #009688;
+  -moz-box-shadow: 0px 0px 14px #009688; }
+
+.sing-up .container > .content .form .body .content-form div:last-child button:hover {
+  box-shadow: 0px 0px 14px #009688; }
+
+.sing-up .container > .btn button, .sing-up .container > .content .form, .sing-up .container > .content .form .body .content-form div:last-child button {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all; }
+
+.sing-up .container > .btn button, .sing-up .container > .content .form, .sing-up .container > .content .form .body .content-form div:last-child button {
+  transition-property: all; }
+
+.sing-up .container > .btn button, .sing-up .container > .content .form, .sing-up .container > .content .form .body .content-form div:last-child button {
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out; }
+
+.sing-up .container > .btn button, .sing-up .container > .content .form, .sing-up .container > .content .form .body .content-form div:last-child button {
+  transition-timing-function: ease-in-out; }
+
+.sing-up .container > .btn button, .sing-up .container > .content .form .body .content-form div:last-child button {
+  transition-duration: 0.3s; }
+
+.sing-up .container > .content .form {
+  transition-duration: 1s; }
+
+.sing-up .container > .content, .sing-up .container > .content .form {
+  position: relative; }
+
+.sing-up .container > .content .err {
+  position: absolute; }
+
+.sing-up .container > .content .err {
+  top: 0; }
+
+.sing-up .container > .content .err {
+  right: 0; }
+
+.sing-up .container > .content .animate-t {
+  z-index: -1; }
+
+.sing-up .container > .content .err {
+  z-index: 10; }
+
+.sing-up .container > .btn button, .sing-up .container > .content .err div, .sing-up .container > .content .form .header span, .sing-up .container > .content .form .body .content-form > div label, .sing-up .container > .content .form .body .content-form div:last-child button {
+  cursor: pointer; }
+
+.sing-up .container > .content, .sing-up .container > .content .err {
+  justify-content: center; }
+
+.sing-up .container > .content .form .header {
+  justify-content: space-between; }
+
+.sing-up .container > .content, .sing-up .container > .content .form .header {
+  align-items: center; }
+
+.sing-up .container > .content .err {
+  align-items: start; }
+
+.sing-up .container > .content .err {
+  flex-direction: column; }
+
+.sing-up .container > .content .animate-t {
+  opacity: 0; }
+
+.sing-up .container > .content .form {
+  overflow: hidden; }
+
+.sing-up .container > .content .form .body .content-form > div input, .sing-up .container > .content .form .body .content-form div:last-child, .sing-up .container > .content .form .body .content-form div:last-child button {
+  width: 100%; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+button, input {
+  border: none;
+  outline: none; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.sing-up {
+  -webkit-background-image: url("http://localhost/tododev/site/Layout/image/bd.png");
+  -moz-background-image: url("http://localhost/tododev/site/Layout/image/bd.png");
+  -o-background-image: url("http://localhost/tododev/site/Layout/image/bd.png");
+  -ms-background-image: url("http://localhost/tododev/site/Layout/image/bd.png");
+  background-image: url("http://localhost/tododev/site/Layout/image/bd.png"); }
+  .sing-up .container > .content {
+    height: 100vh; }
+    .sing-up .container > .content .err {
+      min-width: 1px;
+      height: 80%; }
+      .sing-up .container > .content .err div {
+        min-width: 1px;
+        margin-right: 50px; }
+    .sing-up .container > .content .animate-t {
+      -webkit-transform: translateX(8vw);
+      -moz-transform: translateX(8vw);
+      -o-transform: translateX(8vw);
+      -ms-transform: translateX(8vw);
+      transform: translateX(8vw); }
+    .sing-up .container > .content .form {
+      margin-top: -120px; }
+      .sing-up .container > .content .form .body .content-form > div {
+        width: 300px; }
+      .sing-up .container > .content .form .body .content-form .password ::-webkit-input-placeholder {
+        color: #73ADDF;
+        font-size: 12px;
+        text-transform: capitalize; }
+      .sing-up .container > .content .form .body .content-form .password :-ms-input-placeholder {
+        color: #73ADDF;
+        font-size: 12px;
+        text-transform: capitalize; }
+      .sing-up .container > .content .form .body .content-form .password ::placeholder {
+        font-size: 12px;
+        text-transform: capitalize;
+        color: #73ADDF; }
+      .sing-up .container > .content .form .body .content-form .password input focus::-webkit-input-placeholder {
+        -o-transition: .3s linear;
+        -moz-transition: .3s linear;
+        -ms-transition: .3s linear;
+        -webkit-transition: .3s linear;
+        transition: .3s linear;
+        opacity: 0; }
+      .sing-up .container > .content .form .body .content-form .password input focus::-moz-placeholder {
+        -o-transition: .3s linear;
+        -moz-transition: .3s linear;
+        -ms-transition: .3s linear;
+        -webkit-transition: .3s linear;
+        transition: .3s linear;
+        opacity: 0; }
+      .sing-up .container > .content .form .body .content-form .password input focus:-ms-input-placeholder {
+        -o-transition: .3s linear;
+        -moz-transition: .3s linear;
+        -ms-transition: .3s linear;
+        -webkit-transition: .3s linear;
+        transition: .3s linear;
+        opacity: 0; }
+      .sing-up .container > .content .form .body .content-form .password input focus::-ms-input-placeholder {
+        -o-transition: .3s linear;
+        -moz-transition: .3s linear;
+        -ms-transition: .3s linear;
+        -webkit-transition: .3s linear;
+        transition: .3s linear;
+        opacity: 0; }
+      .sing-up .container > .content .form .body .content-form .password input:focus::placeholder {
+        -o-transition: .3s linear;
+        -moz-transition: .3s linear;
+        -ms-transition: .3s linear;
+        -webkit-transition: .3s linear;
+        transition: .3s linear;
+        opacity: 0; }
+
+body {
+  overflow-x: hidden; }
+
+@media (max-width: 576px) {
+  .body .content-form > div {
+    width: 240px !important; } }
+
+.sing-up {
+  padding: 0; }
+  @media (max-width: 576px) {
+    .sing-up .body .content-form > div {
+      width: 240px !important; } }
+
+/*# sourceMappingURL=singUp.css.map */

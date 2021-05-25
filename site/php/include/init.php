@@ -6,7 +6,8 @@ include_once "function/fun.php";
 // function search user has account or has not account
 function userFound ($arr) {
         global $conn;
-        $stmt   =   $conn->prepare("SELECT * FROM users WHERE  $arr[0] = '$arr[1]' ;");
+        global $inf;
+        $stmt   =   $conn->prepare("SELECT $inf FROM users WHERE  $arr[0] = '$arr[1]' ;");
         $stmt->execute();
         $c      =   $stmt->rowCount();
         if($c == 0) return "not found";

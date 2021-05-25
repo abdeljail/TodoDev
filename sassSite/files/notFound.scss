@@ -1,0 +1,102 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+button{
+    border: none;
+    outline: none;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+*{
+    @extend %margin-0;
+    @extend %padding-0;
+    @extend %box-sizing;
+}
+body{
+    @extend %background-color-dark_white;
+    @extend %font-size-16;
+    font-family: 'Roboto', sans-serif;
+}
+section.notFound{
+ .container{
+        .content-notFound{
+            @extend %padding-20;
+            @extend %display-flex;
+            @extend %justify-content-center;
+            @extend %align-items-center;
+            height: 100vh;
+            .content{
+                @include width(500);
+                @include min-height(250);
+                @extend %border-radius-4;
+                @extend %border-width-4;
+                @extend %border-color-para;
+                @extend %border-style-solid;
+                @extend %flex-direction-column;
+                @extend %display-flex;
+                margin-top: -200px;
+                >*{
+                    flex-basis: 40px;
+                }
+                .header-notFound{
+                    @extend %padding-15-20;
+                    @include flex-grow(0);
+                    @extend %background-color-black;
+                    @extend %color-dark_white;
+                    h1{
+                        @extend %padding-10-0;
+                        @extend %capitalize;
+                    }
+                }
+                .body-notFound{
+                    @extend %padding-15-20;
+                    @include flex-grow(3);
+                   .content-body-notFound{
+                        @extend %padding-20-0;
+                        p{
+                            @extend %capitalize;
+                            line-height: 30px;
+                            span{
+                                @extend %padding-6-14;
+                                @extend %border-radius-4;
+                                @extend %margin-right-4;
+                                // @extend %color-para;
+                                background-color: #0096888f;
+                                &:hover{
+                                    @extend %background-color-green;
+                                    @extend %color-dark_white;
+                                }
+                            }
+                        }
+                    }
+                }
+                .footer-notFound{
+                    @extend %padding-8-20;
+                    @include flex-grow(0);
+                    @extend %border-width-top-4;
+                    @extend %border-color-top-para;
+                    @extend %border-style-top-solid;
+                    >div{
+                        @extend %display-flex;
+                        @extend %justify-content-flex-end;
+                        button{
+                            @extend %padding-10-16;
+                            @extend %border-radius-4;
+                            @extend %background-color-black;
+                            @extend %box-shadow-black;
+                            @extend %transition-timing-function-ease-in-out;
+                            @extend %transition-property-all;
+                            @extend %transition-duration-3;
+                            @extend %pointer;
+                            @extend %color-dark_white;
+                            @extend %capitalize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@import "../include/mediaQuery/container";

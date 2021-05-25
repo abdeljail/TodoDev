@@ -75,7 +75,7 @@ require_once getPathFile('include/template/body.php');?>
 <?php 
 require_once getPathFile('include/template/footer1.php');
 script("","filesReq/global");
-script("","files/singUp");
+script("","files/singUp","type='module'");
 script("","filesReq/footer1");
 require_once getPathFile('include/template/end.php');
 ?>

@@ -12,6 +12,8 @@ let addEventClassRemove = (element, el, nameClass) => element.addEventListener("
 let addEventClassAdd    = (element, el, nameClass) => element.addEventListener("click", _ => addClass(el, nameClass));
 // function  Element => add class
 let addClass = (element, NameClass) => element.classList.add(NameClass);
+// function  Element => add class
+let addUrl = (element, url) => element.addEventListener("click" ,_=> window.location.href = url);
 // function check url for add class in tage h1
 let urlH1 = _ => addClass(h1,"h1");
 document.URL.split("=")[1] === "France" ? urlH1() : null

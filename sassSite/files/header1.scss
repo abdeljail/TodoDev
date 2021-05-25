@@ -48,7 +48,7 @@ header{
                     }
                 }
                 .i-u{
-                    button{
+                    a{
                         @extend %padding-10-16;
                         @extend %margin-0-10;
                         @extend %border-radius-4;
@@ -58,8 +58,9 @@ header{
                         @extend %transition-property-all;
                         @extend %transition-timing-function-ease-in-out;
                         @extend %transition-duration-1;
+                        text-decoration: none;
                     }
-                    button:first-child{
+                    a:first-child{
                         @extend %color-yellow;
                         @extend %border-style-solid;
                         @extend %border-width-1;
@@ -69,7 +70,7 @@ header{
                             background-color: #fc8f0031;
                         }
                     }
-                    button:last-child{
+                    a:last-child{
                         @extend %background-color-yellow;
                         @extend %color-white;
                         @extend %box-shadow-yellow;

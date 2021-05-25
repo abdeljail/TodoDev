@@ -1,0 +1,9 @@
+@import "../include/files/varaibles";
+@import "../include/files/extend";
+@import "../include/files/mixin";
+body{
+    direction: rtl;
+}
+.lang div:first-child span{
+    @extend %margin-right-10;
+}

@@ -1,13 +1,4 @@
 <?php
-session_start();
-if(isset($_SESSION["name"]) && isset($_SESSION["email"]) && isset($_SESSION["id"])){
-    header("Location:http://localhost/tododev/control/dach.php");
-    exit;
-}
-if(!empty($_SESSION["name"]) && !empty($_SESSION["email"]) && !empty($_SESSION["id"])){
-    header("Location:http://localhost/tododev/control/dach.php");
-    exit;
-}
 include_once "php/include/function/fun.php";
 $l = "en.php";
 $nameLang = "English";
@@ -21,14 +12,17 @@ $titlePage = "not found";
 require_once getPathFile('include/template/start.php');
 // # include file login.css
 links('','files/notFound');
-links('','files/footer');
+links('','files/footer1');
+links('','files/header1');
 if($nameLang == "arabe"){
     links('','ar/arnotFound');
+    links('','ar/footer1');
 }
 # echo title Page
 getTitlePage();
 #include file body.php
-require_once getPathFile('include/template/body.php');?>
+require_once getPathFile('include/template/body.php');
+require_once getPathFile('include/template/header1.php');?>
 <section class="notFound">
     <div class="container">
         <div class="content-notFound">
@@ -55,13 +49,14 @@ require_once getPathFile('include/template/body.php');?>
     </div>
 </section>
 <?php 
-require_once getPathFile('include/template/footer.php');
-script("","footer");
+require_once getPathFile('include/template/footer1.php');
+script("","filesReq/global");
+script("","filesReq/footer1");
 ?>
 <script>
-  document.querySelector(".btn button").addEventListener("click",_=> window.location.href = "http://localhost/tododev/control/singIn.php" + document.URL.split("?")[1] );
-  user = document.URL.split("user=")[1] 
-  var user = document.URL.split("user=")[1] === undefined ? "user" : document.URL.split("user=")[1];
+  document.querySelector(".btn button").addEventListener("click",_=> window.location.href = "http://localhost/tododev/site/?");
+  user = document.URL.split("?")[1]
+  var user = document.URL.split("?")[1] === undefined ? "user" : document.URL.split("?")[1];
   document.querySelector("#user").innerHTML = user;
 </script>
 <?php
