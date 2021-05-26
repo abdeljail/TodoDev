@@ -1,0 +1,286 @@
+.sing-in .container > .content .err div, .sing-in .container > .content .form .header span {
+  color: #020313; }
+
+.sing-in .container > .content .form .header h1, .sing-in .container > .content .form .body .content-form div:last-child button {
+  color: #F0F2F4; }
+
+.sing-in .container > .content .form .body .content-form > div label {
+  color: #546274; }
+
+.sing-in .container > .content .err div i {
+  color: #F15555; }
+
+body {
+  background-color: #020313; }
+
+.sing-in .container > .content .form .body .content-form div:last-child button {
+  background-color: #009688; }
+
+.sing-in .container > .content .form .header {
+  background-color: #026057; }
+
+.sing-in .container > .btn button:hover {
+  background-color: #F9F9F9; }
+
+.sing-in .container > .content .form {
+  background-color: #F0F2F4; }
+
+.sing-in .container > .content .err div {
+  background-color: #f3cbcb; }
+
+.sing-in .container > .content .form .header span {
+  padding: 4px 8px; }
+
+.sing-in .container > .btn button, .sing-in .container > .content .err div, .sing-in .container > .content .form .body .content-form div:last-child button {
+  padding: 10px 15px; }
+
+.sing-in .container > .content .form > div {
+  padding: 10px 20px; }
+
+.sing-in .container > .content .form .body .content-form > div input {
+  padding: 15px 15px; }
+
+.sing-in {
+  padding: 20px 20px; }
+
+* {
+  padding: 0px; }
+
+.sing-in .container > .content .err {
+  padding: 20px; }
+
+.sing-in .container > .content .form .body .content-form div:last-child {
+  padding-top: 20px; }
+
+* {
+  margin: 0px; }
+
+.sing-in .container > .content .form .body .content-form > div input {
+  margin: 10px 0; }
+
+.sing-in .container > .content .form .body .content-form > div {
+  margin: 20px 0; }
+
+.sing-in .container > .content .form .body .content-form div:last-child {
+  margin-bottom: 0px; }
+
+.sing-in .container > .content .form .body .content-form > div label {
+  margin-left: 4px; }
+
+.sing-in .container > .content .err div {
+  margin-top: 10px; }
+
+.sing-in .container > .btn button {
+  margin-top: 20px; }
+
+.sing-in .container > .content .err div i {
+  margin-left: 20px; }
+
+.sing-in .container > .content .err div i, .sing-in .container > .content .form .header h1 {
+  font-weight: 500; }
+
+.sing-in .container > .btn button, .sing-in .container > .content .form .body .content-form > div label {
+  font-size: 15px; }
+
+body, .sing-in .container > .content .form .body .content-form div:last-child button {
+  font-size: 16px; }
+
+.sing-in .container > .content .form .header .h1 {
+  font-size: 19px; }
+
+.sing-in .container > .content .form .header h1 {
+  font-size: 32px; }
+
+.sing-in .container > .content .err {
+  text-align: right; }
+
+.sing-in .container > .content .form .header h1, .sing-in .container > .content .form .body .content-form > div label, .sing-in .container > .content .form .body .content-form div:last-child button {
+  text-transform: capitalize; }
+
+.sing-in .container > .content .form .body .content-form > div input {
+  display: block; }
+
+.sing-in .container > .content, .sing-in .container > .content .err, .sing-in .container > .content .form .header {
+  display: flex; }
+
+.sing-in .container > .content .err div, .sing-in .container > .content .form .body .content-form > div input {
+  border-width: 1px; }
+
+.sing-in .container > .content .form .body .content-form div:last-child button {
+  border-width: 2px; }
+
+.sing-in .container > .content .form .body .content-form div:last-child {
+  border-top-width: 2px; }
+
+.sing-in .container > .btn button {
+  border-bottom-width: 4px; }
+
+.sing-in .container > .content .err div, .sing-in .container > .content .form .body .content-form > div input, .sing-in .container > .content .form .body .content-form div:last-child button {
+  border-style: solid; }
+
+.sing-in .container > .content .form .body .content-form div:last-child {
+  border-top-style: solid; }
+
+.sing-in .container > .btn button {
+  border-bottom-style: solid; }
+
+.sing-in .container > .content .form .body .content-form > div input:focus {
+  border-color: #020313; }
+
+.sing-in .container > .content .form .body .content-form div:last-child button {
+  border-color: #026057; }
+
+.sing-in .container > .btn button {
+  border-bottom-color: #026057; }
+
+.sing-in .container > .content .form .body .content-form > div input {
+  border-color: #ccc; }
+
+.sing-in .container > .content .form .body .content-form div:last-child {
+  border-top-color: #ccc; }
+
+.sing-in .container > .btn button:hover {
+  border-bottom-color: #F69A0F; }
+
+.sing-in .container > .content .err div {
+  border-color: #F15555; }
+
+.sing-in .container > .content .form .body .content-form div:last-child {
+  border-radius: 2px; }
+
+.sing-in .container > .content .err div, .sing-in .container > .content .form .body .content-form > div input, .sing-in .container > .content .form .body .content-form div:last-child button {
+  border-radius: 4px; }
+
+.sing-in .container > .btn button {
+  border-radius: 6px; }
+
+.sing-in .container > .content .form {
+  border-radius: 8px; }
+
+.sing-in .container > .content .form .body .content-form div:last-child button:hover {
+  -webkit-box-shadow: 0px 0px 14px #009688;
+  -moz-box-shadow: 0px 0px 14px #009688; }
+
+.sing-in .container > .content .form .body .content-form div:last-child button:hover {
+  box-shadow: 0px 0px 14px #009688; }
+
+.sing-in .container > .btn button, .sing-in .container > .content .form, .sing-in .container > .content .form .body .content-form div:last-child button {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -ms-transition-property: all; }
+
+.sing-in .container > .btn button, .sing-in .container > .content .form, .sing-in .container > .content .form .body .content-form div:last-child button {
+  transition-property: all; }
+
+.sing-in .container > .btn button, .sing-in .container > .content .form, .sing-in .container > .content .form .body .content-form div:last-child button {
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out; }
+
+.sing-in .container > .btn button, .sing-in .container > .content .form, .sing-in .container > .content .form .body .content-form div:last-child button {
+  transition-timing-function: ease-in-out; }
+
+.sing-in .container > .btn button, .sing-in .container > .content .form .body .content-form div:last-child button {
+  transition-duration: 0.3s; }
+
+.sing-in .container > .content .form {
+  transition-duration: 1s; }
+
+.sing-in .container > .content, .sing-in .container > .content .form {
+  position: relative; }
+
+.sing-in .container > .content .err {
+  position: absolute; }
+
+.sing-in .container > .content .err {
+  top: 0; }
+
+.sing-in .container > .content .err {
+  right: 0; }
+
+.sing-in .container > .content .animate-t {
+  z-index: -1; }
+
+.sing-in .container > .content .err {
+  z-index: 10; }
+
+.sing-in .container > .btn button, .sing-in .container > .content .err div, .sing-in .container > .content .form .header span, .sing-in .container > .content .form .body .content-form > div label, .sing-in .container > .content .form .body .content-form div:last-child button {
+  cursor: pointer; }
+
+.sing-in .container > .content, .sing-in .container > .content .err {
+  justify-content: center; }
+
+.sing-in .container > .content .form .header {
+  justify-content: space-between; }
+
+.sing-in .container > .content, .sing-in .container > .content .form .header {
+  align-items: center; }
+
+.sing-in .container > .content .err {
+  align-items: start; }
+
+.sing-in .container > .content .err {
+  flex-direction: column; }
+
+.sing-in .container > .content .animate-t {
+  opacity: 0; }
+
+.sing-in .container > .content .form {
+  overflow: hidden; }
+
+.sing-in .container > .content .form .body .content-form > div input, .sing-in .container > .content .form .body .content-form div:last-child, .sing-in .container > .content .form .body .content-form div:last-child button {
+  width: 100%; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+button, input {
+  border: none;
+  outline: none; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+
+.sing-in {
+  -webkit-background-image: url("http://localhost/tododev/site/Layout/image/bd.png");
+  -moz-background-image: url("http://localhost/tododev/site/Layout/image/bd.png");
+  -o-background-image: url("http://localhost/tododev/site/Layout/image/bd.png");
+  -ms-background-image: url("http://localhost/tododev/site/Layout/image/bd.png");
+  background-image: url("http://localhost/tododev/site/Layout/image/bd.png"); }
+  .sing-in .container > .content {
+    height: 100vh; }
+    .sing-in .container > .content .err {
+      min-width: 1px;
+      height: 80%; }
+      .sing-in .container > .content .err div {
+        min-width: 1px;
+        margin-right: 50px; }
+    .sing-in .container > .content .animate-t {
+      -webkit-transform: translateX(8vw);
+      -moz-transform: translateX(8vw);
+      -o-transform: translateX(8vw);
+      -ms-transform: translateX(8vw);
+      transform: translateX(8vw); }
+    .sing-in .container > .content .form {
+      margin-top: -120px; }
+      .sing-in .container > .content .form .body .content-form > div {
+        width: 300px; }
+
+body {
+  overflow-x: hidden; }
+
+@media (max-width: 576px) {
+  .body .content-form > div {
+    width: 240px !important; } }
+
+.sing-up {
+  padding: 0; }
+  @media (max-width: 576px) {
+    .sing-up .body .content-form > div {
+      width: 240px !important; } }
+
+/*# sourceMappingURL=singIn.css.map */
